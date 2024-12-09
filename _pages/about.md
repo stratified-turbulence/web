@@ -1,11 +1,45 @@
 ---
-permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
-author_profile: true
+# permalink: /
+# title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+# author_profile: true
+# layout: splash
+# redirect_from: 
+#   - /about/
+#   - /about.html
 layout: splash
-redirect_from: 
-  - /about/
-  - /about.html
+permalink: /
+hidden: true
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/mm-home-page-feature.jpg
+  actions:
+    - label: "<i class='fas fa-download'></i> Install now"
+      url: "/docs/quick-start-guide/"
+excerpt: >
+  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
+  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2">Latest release v4.26.2</a></small>
+feature_row:
+  - image_path: /assets/images/mm-customizable-feature.png
+    alt: "customizable"
+    title: "Super customizable"
+    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
+    url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/mm-responsive-feature.png
+    alt: "fully responsive"
+    title: "Responsive layouts"
+    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
+    url: "/docs/layouts/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/mm-free-feature.png
+    alt: "100% free"
+    title: "100% free"
+    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
+    url: "/docs/license/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"  
 ---
 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
