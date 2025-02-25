@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "STRATA"
 description              : &description "personal description"
 url                      : https://stratified-turbulence.github.io/web # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/web" # the subpath of your site, e.g. "/blog"
 repository               : ""
 
 
