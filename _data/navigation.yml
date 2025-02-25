@@ -5,23 +5,37 @@
 # prevent it from being included in the site.
 
 main:
+
+  - title: "Datasets and Code"
+    url: /Datasets/
+
+  # - title: "Research Themes"
+  #   url: /Research/
+
   - title: "Publications"
-    url: /publications/
+    url: /Publications/
 
-  - title: "Talks"
-    url: /talks/    
+  # - title: "Gallery"
+  #   url: /Gallery/   
 
-  - title: "Teaching"
-    url: /teaching/    
+  # - title: "Archive Layout with Content"
+  #   url: /archive-layout-with-content/
+---
+
+  # - title: "Talks"
+  #   url: /talks/    
+
+  # - title: "Teaching"
+  #   url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
+  # - title: "Portfolio"
+  #   url: /portfolio/
         
-  - title: "Blog Posts"
-    url: /year-archive/
+  # - title: "Blog Posts"
+  #   url: /year-archive/
     
-  - title: "CV"
-    url: /cv/
+  # - title: "CV"
+  #   url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/

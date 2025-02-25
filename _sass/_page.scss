@@ -37,6 +37,7 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  color: #000000;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -142,8 +143,8 @@
     .page__meta,
     .page__lead,
     .btn {
-      color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      color: #000000;
+      //text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
 
     .page__lead {

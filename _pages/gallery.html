@@ -1,0 +1,67 @@
+---
+layout: archive
+title: "Gallery"
+permalink: /Gallery/
+author_profile: false
+---
+
+<style>
+    /* Gallery container styling */
+    .gallery-container {
+        display: block;
+        /* Make the gallery items stack vertically */
+        margin: 0 auto;
+        max-width: 100%;
+        /* Make sure it doesn't overflow */
+        padding: 20px 0;
+        /* Add vertical padding around the gallery */
+    }
+
+    /* Gallery item styling */
+    .gallery-item {
+        margin-bottom: 20px;
+        /* Adds vertical space between each image */
+    }
+
+    .gallery-item img {
+        width: 100%;
+        /* Make each image take the full width of its container */
+        height: auto;
+        /* Maintain the image's aspect ratio */
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    /* Hover effect */
+    .gallery-item img:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+
+<section class="image-gallery">
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <a href="/images/Out2 Copy.jpg">
+                <img src="/images/Out2 Copy.jpg" alt="Description of Image 1">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/images/Splash1.jpg">
+                <img src="/images/Splash1.jpg" alt="Description of Image 2">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/images/fast_labels_fs=5_thresh=0.9.mp4" target="_blank">
+              <video width="100%" height="auto" controls>
+                <source src="/images/fast_labels_fs=5_thresh=0.9.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          </div>
+        <!-- Add more images as necessary -->
+    </div>
+</section>
+
+
