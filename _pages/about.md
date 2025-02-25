@@ -78,7 +78,7 @@ Groups interested in collaboration are encouraged to reach out.
 <!-- <img src="/images/Logos.jpg" alt="Alt text" style="width: 800px;"> -->
 
 <div style="text-align: center;">
-  <img src="Logos.jpg" alt="Alt text" style="width: 800px;">
+  <img src="/web/images/Logos.jpg" alt="Alt text" style="width: 800px;">
 </div>
 
 
