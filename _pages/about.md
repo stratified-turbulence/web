@@ -69,8 +69,8 @@ This work is collaborative across multiple international institutions, including
 * Duke University (US): [Andrew Bragg](https://cee.duke.edu/people/andrew-bragg/)
 * Princeton University (US): [Paul Yi](https://tune.cee.princeton.edu/people/young-paul-yi/)
 * Oak Ridge National Laboratory (US): Murali Gopalakrishnan Meena, Wes Brewer, Aditya Kashi, Isaac Lyngass, Pei Zhang
-* Imperial College London (UK) [Adrien Lefauve](https://www.alefauve.com/)
-* York University (Canada) [Miles Couchman](https://www.yorku.ca/professor/couchman/)
+* Imperial College London (UK): [Adrien Lefauve](https://www.alefauve.com/)
+* York University (Canada): [Miles Couchman](https://www.yorku.ca/professor/couchman/)
 
 Groups interested in collaboration are encouraged to reach out. 
 
