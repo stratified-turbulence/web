@@ -58,7 +58,7 @@ We gratefully acknowledge support from the [INCITE Leadership Computing Program]
 - Development of data-driven and machine-learning techniques to extra physical insight from petabyte-scale datasets 
 
 ## Datasets
-We are developing a [database of stratified turbulence simluations]([/Datasets/](https://stratified-turbulence.github.io/web/Datasets/)), and associated codes for analysis. Our data spans a variety of:
+We are developing a [database of stratified turbulence simluations](https://stratified-turbulence.github.io/web/Datasets/), and associated codes for analysis. Our data spans a variety of:
 - **Forcing schemes**: steady-state vortically-forced and shear-driven; time-evolving (unforced) flows
 - **Parameters**: buoyancy-Reynolds ($Re_b$), Froude ($Fr$), Prandtl ($Pr$) numbers
 
