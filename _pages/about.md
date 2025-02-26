@@ -58,18 +58,19 @@ We gratefully acknowledge support from the [INCITE Leadership Computing Program]
 - Development of data-driven and machine-learning techniques to extra physical insight from petabyte-scale datasets 
 
 ## Datasets
-We are developing a [database of stratified turbulence simluations](/Datasets/), and associated codes for analysis. Our data spans a variety of:
+We are developing a [database of stratified turbulence simluations]([/Datasets/](https://stratified-turbulence.github.io/web/Datasets/)), and associated codes for analysis. Our data spans a variety of:
 - **Forcing schemes**: steady-state vortically-forced and shear-driven; time-evolving (unforced) flows
 - **Parameters**: buoyancy-Reynolds ($Re_b$), Froude ($Fr$), Prandtl ($Pr$) numbers
 
 ## People
-This work is collaborative across multiple research groups, currently including:
+This work is collaborative across multiple international institutions, including:
 
-* [Steve de Bruyn Kops](https://www.umass.edu/engineering/about/directory/stephen-de-bruyn-kops) -- University of Massachusetts Amherst (USA)
-* [Andrew Bragg](https://cee.duke.edu/people/andrew-bragg/) -- Duke University (USA) 
-* [Miles Couchman](https://www.yorku.ca/professor/couchman/) -- York University (Canada)
-* [Adrian Lefauve](https://www.alefauve.com/) -- University of Cambridge (UK) 
-* [Paul Yi](https://tune.cee.princeton.edu/people/young-paul-yi/) -- Princeton University (USA) 
+* University of Massachusetts Amherst (US): [Steve de Bruyn Kops](https://www.umass.edu/engineering/about/directory/stephen-de-bruyn-kops)
+* Duke University (US): [Andrew Bragg](https://cee.duke.edu/people/andrew-bragg/)
+* Princeton University (US): [Paul Yi](https://tune.cee.princeton.edu/people/young-paul-yi/)
+* Oak Ridge National Laboratory (US): Murali Gopalakrishnan Meena, Wes Brewer, Aditya Kashi, Isaac Lyngass, Pei Zhang
+* Imperial College London (UK) [Adrien Lefauve](https://www.alefauve.com/)
+* York University (Canada) [Miles Couchman](https://www.yorku.ca/professor/couchman/)
 
 Groups interested in collaboration are encouraged to reach out. 
 
