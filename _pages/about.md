@@ -48,9 +48,9 @@ feature_row:
 
 # Welcome to the <span style="color: #fe5f55;">**STRATA**</span> Research Group <br> <span style="font-size: 32px; color: #fe5f55;">**S**</span>upercomputing for <span style="font-size: 32px; color: #fe5f55;">**S**</span>tratified <span style="font-size: 32px; color: #fe5f55;">**T**</span>urbulence <span style="font-size: 32px; color: #fe5f55;">**R**</span>esearch <span style="font-size: 32px; color: #fe5f55;">**A**</span>dvancing <span style="font-size: 32px; color: #fe5f55;">**T**</span>heory and <span style="font-size: 32px; color: #fe5f55;">**A**</span>pplication
 
-The objective of this group is to generate and analyze fully-resolved direct numerical simluations of stratified turbulence, across a variety of flow configurations and parameters, in order to better understand fundamental turbulent processes influenced by buoyancy and their importance to geophysical, industrial, and environmental applications. 
+The objective of this group is to generate and analyze fully-resolved direct numerical simulations of stratified turbulence, across a variety of flow configurations and parameters, in order to better understand fundamental turbulent processes influenced by buoyancy and their importance to geophysical, industrial, and environmental applications. 
 
-We gratefully acknowledge support from the [INCITE Leadership Computing Program](https://doeleadershipcomputing.org) (US Department of Energy), through which this work has been enabled. 
+We gratefully acknowledge support from the [INCITE Leadership Computing Program](https://doeleadershipcomputing.org) (U.S. Department of Energy) and the [High Performance Computing Modernization Program](https://www.hpc.mil/) (U.S. Department of Defense), through which this work has been enabled. 
 
 ## Current Research Themes
 - Exascale computing to resolve stratified turbulent flows in previously-inaccessible regions of parameter space
@@ -58,7 +58,7 @@ We gratefully acknowledge support from the [INCITE Leadership Computing Program]
 - Development of data-driven and machine-learning techniques to extra physical insight from petabyte-scale datasets 
 
 ## Datasets
-We are developing a [database of stratified turbulence simluations](https://stratified-turbulence.github.io/web/Datasets/), and associated codes for analysis. Our data spans a variety of:
+We are developing a [database of stratified turbulence simulations](https://stratified-turbulence.github.io/web/Datasets/), and associated codes for analysis. Our data spans a variety of:
 - **Forcing schemes**: steady-state vortically-forced and shear-driven; time-evolving (unforced) flows
 - **Parameters**: buoyancy-Reynolds ($Re_b$), Froude ($Fr$), Prandtl ($Pr$) numbers
 
@@ -68,7 +68,7 @@ This work is collaborative across multiple international institutions, including
 * University of Massachusetts Amherst (US): [Steve de Bruyn Kops](https://www.umass.edu/engineering/about/directory/stephen-de-bruyn-kops)
 * Duke University (US): [Andrew Bragg](https://cee.duke.edu/people/andrew-bragg/)
 * Princeton University (US): [Paul Yi](https://tune.cee.princeton.edu/people/young-paul-yi/)
-* Oak Ridge National Laboratory (US): Murali Gopalakrishnan Meena, Wes Brewer, Aditya Kashi, Isaac Lyngass, Pei Zhang
+* Oak Ridge National Laboratory (US): [Murali Gopalakrishnan Meena](https://www.ornl.gov/staff-profile/murali-gopalakrishnan-meena), [Wes Brewer](https://www.ornl.gov/staff-profile/wesley-h-brewer), [Aditya Kashi](https://www.ornl.gov/staff-profile/aditya-kashi), [Isaac Lyngass](https://www.ornl.gov/staff-profile/isaac-r-lyngaas), [Pei Zhang](https://www.ornl.gov/staff-profile/pei-zhang)
 * Imperial College London (UK): [Adrien Lefauve](https://www.alefauve.com/)
 * York University (Canada): [Miles Couchman](https://www.yorku.ca/professor/couchman/)
 
