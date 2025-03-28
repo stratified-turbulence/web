@@ -39,3 +39,25 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+
+.publication-entry .publication-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .publication-thumb-container {
+    flex-shrink: 0;
+  }
+  
+  .publication-thumb {
+    width: 220px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  .publication-text {
+    flex-grow: 1;
+  }
