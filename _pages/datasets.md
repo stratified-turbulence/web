@@ -19,6 +19,8 @@ Files are stored on the [Constellation repository](https://doi.ccs.ornl.gov/), w
 
 The numerical precision (single or double) of the saved data is specified, and varies between datasets. To easily detect errors in reading and reshaping the raw data, two zeros are padded onto the end of the $x$-dimension. The datafiles thus have size $\left(N_{x}+2\right)\times N_{y}\times N_{z}$. Python code is provided to read and save a given binary file as a three-dimensional array (e.g. as a NumPy array). For the larger datasets, it is advisable to use a memory map to avoid overloading your local RAM. 
 
+## Equations of motion 
+To be updated.
 
 
 ## Time-evolving flows
@@ -61,6 +63,11 @@ The numerical precision (single or double) of the saved data is specified, and v
         | [Doe Doe](#)     | 2022   | Description of the item in the list                          | -->
 
 
+## Test Plots
 
+<iframe src="/web/assets/plots/plot.html" 
+        width="100%" 
+        height="600px" 
+        style="border: none;"></iframe>
 
 
