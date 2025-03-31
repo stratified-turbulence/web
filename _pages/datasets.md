@@ -33,7 +33,7 @@ To be updated.
 
     | Name and dataset link      | $Pr$   |   Number of snapshots  | Field size (per snapshot)                                      |
     | --------           | ------ | ------|        |
-    | [TG_P1F4R32](#)    | 1     | 15,000 | 255 MB|
+    | [TG_P1F4R32](https://doi.org/10.13139/OLCF/2530508)    | 1     | 15,000 | 255 MB|
     | [TG_P7F4R32](#)    | 7     | 27,000  | 3.9 GB|
     | [TG_P50F4R32](#)   |  50     | 1,680   | 84 GB  | 
 
