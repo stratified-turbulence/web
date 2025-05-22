@@ -121,7 +121,7 @@ Note that parameter values need only be chosen such that the dimensionless group
 The figure below illustrates the range of relevant length scales that must be resolved in a DNS of stratified turbulence.
 
 <div style="text-align: center;">
-  <img src="/web/images/lengthscales.jpg" alt="Alt text" style="width: 700px;">
+  <img src="/web/images/lengthScales.jpg" alt="Alt text" style="width: 700px;">
 </div>
 
 <br>
