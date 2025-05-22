@@ -199,6 +199,9 @@ DNS runs may be broadly categorized as follows, with further details and downloa
         - Methodology: <a href="https://doi.org/10.1063/1.1578077" target="_blank">Riley and de Bruyn Kops, *PoF*, 2003</a> 
 
 
+Once downloaded, data may be accessed using scripts provided <a href="https://github.com/muralikrishnangm/getData-SST.git" target="_blank">in this Github Respository</a>, which includes Python scripts for extracting subdomains and visualizing snapshots.
+
+
 <div style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
   <!-- Two-column section -->
   <div style="display: flex; align-items: center; justify-content: space-between; gap: 2em;">
@@ -254,7 +257,7 @@ DNS runs may be broadly categorized as follows, with further details and downloa
       <p><a href="/web/portfolio/taylorgreen/" style="color: #007acc; font-weight: bold;">Video and further details →</a></p> -->
     </div>
     <div style="flex: 1;">
-      <img src="/web/images/forced.jpg" alt="Taylor-Green" style="width: 100%; border: none;">
+      <img src="/web/images/Forced.jpg" alt="Taylor-Green" style="width: 100%; border: none;">
     </div>
   </div>
 
@@ -351,11 +354,7 @@ DNS runs may be broadly categorized as follows, with further details and downloa
 
   <div markdown="1">
 
-  <!-- | Name and dataset link      | $Pr$   |   Number of snapshots  | Field size (per variable, snapshot) |
-  | --------           | ------ | ------|        |
-  | D    | 1     | 15,000 | 255 MB|
-  | D    | 7     | 27,000  | 3.9 GB|
-  | D   |  50     | 1,680   | 84 GB  |   -->
+  
 
   </div>
   </div>
