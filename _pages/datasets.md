@@ -185,14 +185,14 @@ The numerical precision (single or double) of the saved data is specified, and v
 DNS runs may be broadly categorized as follows, with further details and download links (if available) provided in the following tables:
 
 - **Time-independent (statistically-stationary) --** A single snapshot of the steady turbulent flow (dissipation balanced by forcing) is provided for a given set of parameters. Turbulence is maintained via the following body forcing schemes:
-    - **A. Forced, no mean shear:** Large spectral modes forced, without introducing mean shear, so as to maintain prescribed energy spectrum at large scales.
+    - **A. Forced, no mean shear:** Large spectral modes forced, without introducing mean shear, so as to maintain prescribed energy spectrum at large scales. Facilitates access to broad range of parameter space using relatively modest domains, particularly the high $Re_b$, low $Fr$ regime.
         - Methodology: <a href="https://doi.org/10.1080/14685248.2012.702909" target="_blank">Almalkie and de Bruyn Kops, *JoT*, 2012</a> 
-    - **B. Forced, vertical shear:** Background vertical shear injects energy; Richardson number varied to maintain fixed kinetic energy.
+    - **B. Forced, vertical shear:** Background vertical shear injects energy; Richardson number $Ri$ varied to maintain fixed kinetic energy. Comparatively high $Fr$ relative to the other datasets.
         - Methodology: <a href="https://doi.org/10.1103/PhysRevLett.122.194504" target="_blank">Portwood, de Bruyn Kops, and Caulfield, *PRL*, 2019</a> <br><br>
 
 
 - **Time-dependent evolution.** Turbulence initialized using initial flow fields described below, then allowed to freely evolve without forcing. Multiple flow snapshots saved over time.
-    - **C. Decaying, initially unstratified:** Field of unstratified turbulence generated, gravitational force is then introduced, flow is observed over time as it decays.
+    - **C. Decaying, initially unstratified:** Field of unstratified turbulence generated, gravitational force is then introduced, flow is observed over time as it decays. Superior resolution of vast range of length-scales in limited region of $Re_b$-$Fr$ parameter space.
         - Methodology: <a href="https://doi.org/10.1017/jfm.2018.888" target="_blank">de Bruyn Kops and Riley, *JFM*, 2018</a> 
 
     - **D. Taylor-Green vortices:** Turbulence triggered by initially laminar field of Taylor-Green vortices, develops, and then decays back to laminar state.

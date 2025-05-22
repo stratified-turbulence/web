@@ -59,8 +59,11 @@ We gratefully acknowledge support from the [INCITE Leadership Computing Program]
 
 ## Datasets
 We are developing a [database of stratified turbulence simulations](https://stratified-turbulence.github.io/web/Datasets/), and associated codes for analysis. Our data spans a variety of:
-- **Forcing schemes**: steady-state vortically-forced and shear-driven; time-evolving (unforced) flows
-- **Parameters**: buoyancy-Reynolds ($Re_b$), Froude ($Fr$), Prandtl ($Pr$) numbers
+- **Flow conditions**: 
+  - Steady-state synthetically-forced or shear-driven; 
+  - Unforced time-evolution, initialized via unstratified turbulence or Taylor-Green vortices
+- **Parameters**: 
+  - Buoyancy-Reynolds ($Re_b$), Froude ($Fr$), Prandtl ($Pr$), Richardson ($Ri$) numbers
 
 ## People
 This work is collaborative across multiple international institutions, including:
