@@ -272,7 +272,7 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
   |Name, dataset link, parameter file | $Pr$ |  $Fr_h$ | Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) 
   | --------          | ------ | ------|        |
   | F_P1F050Gn50    | 1     | 0.5  | $8192^2 \times 1024$  | 275 GB|
-  | F_P1F100Gn50    | 1     | 1  | $4096^2 \times 4096$  | 275 GB|
+  | F_P1F100Gn50    | 1     | 1  | $4096^2 \times 1024$  | 275 GB|
   | F_P1F200Gn50    | 1     | 2   | $2048^2 \times 1024$  | 17 GB| 
   | F_P7F050Gn50    | 7     | 0.5   | $30240^2 \times 3780$ | 13.8 TB |
   | F_P7F100Gn50    | 7     | 1   | $8192^2 \times 2048$  | 550 GB|
