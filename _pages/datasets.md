@@ -232,8 +232,8 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
   | Name, dataset link, parameter file | $Pr$   |   Number of snapshots in time  |  Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) | Total dataset size
   | --------           | ------ | ------|        |
   | <a href="https://doi.org/10.13139/OLCF/2530508" target="_blank">TG_P1F4R32</a>   | 1     | 15,000 | $512^2 \times 256$ |255 MB| 15 GB
-  | TG_P7F4R32 (upload in progress)   | 7     | 15,250  | $1280^2 \times 640$ | 4 GB| 244 TB
-  | TG_P50F4R32 (upload in progress)   |  50     | 1,680  | $3584^2 \times 1792$ | 86 GB  | 577 TB
+  | <a href="https://doi.org/10.13139/OLCF/2566733" target="_blank">TG_P7F4R32</a>   | 7     | 15,250  | $1280^2 \times 640$ | 4 GB| 244 TB
+  | <a href="https://doi.org/10.13139/OLCF/2566017" target="_blank">TG_P50F4R32</a>  |  50   | 1,680  | $3584^2 \times 1792$ | 86 GB  | 577 TB
 
   </div>
   </div>
