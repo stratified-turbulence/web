@@ -5,96 +5,313 @@ permalink: /Gallery/
 author_profile: false
 ---
 
-# Datasets
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
 
 <style>
-    /* Gallery container styling */
-    .gallery-container {
-        display: block;
-        /* Make the gallery items stack vertically */
-        margin: 0 auto;
-        max-width: 100%;
-        /* Make sure it doesn't overflow */
-        padding: 20px 0;
-        /* Add vertical padding around the gallery */
-    }
-
-    /* Gallery item styling */
-    .gallery-item {
-        margin-bottom: 20px;
-        /* Adds vertical space between each image */
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .gallery-item img {
-        width: 100%;
-        /* Make each image take the full width of its container */
-        height: auto;
-        /* Maintain the image's aspect ratio */
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-    }
-
-    /* Hover effect */
-    .gallery-item img:hover {
-        transform: scale(1.05);
-    }
-
-    /* YouTube iframe responsive wrapper */
-    .video-wrapper {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        height: 0;
-        overflow: hidden;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .video-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+  .gallery-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .gallery-sidenav {
+    position: sticky;
+    top: 80px;
+    width: 170px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 0.75rem;
+  }
+  .gallery-sidenav a {
+    font-size: 0.82rem;
+    color: #888;
+    text-decoration: none;
+    padding: 0.25rem 0;
+    line-height: 1.3;
+    transition: color 0.2s;
+    border-left: 2px solid transparent;
+    margin-left: -0.85rem;
+    padding-left: 0.75rem;
+  }
+  .gallery-sidenav a:hover {
+    color: #222;
+  }
+  .gallery-sidenav a.active {
+    color: #222;
+    border-left-color: #222;
+    font-weight: 600;
+  }
+  .gallery-main {
+    flex: 1;
+    min-width: 0;
+  }
+  .project-section {
+    margin-bottom: 3rem;
+    scroll-margin-top: 20px;
+  }
+  .project-section h2 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.35rem;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .gallery-thumb {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    aspect-ratio: 16 / 9;
+    background: #111;
+    cursor: pointer;
+  }
+  .gallery-thumb img,
+  .gallery-thumb video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .gallery-thumb:hover img,
+  .gallery-thumb:hover video {
+    transform: scale(1.04);
+    opacity: 0.8;
+  }
+  .thumb-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: #fff;
+    padding: 1.5rem 0.75rem 0.6rem;
+    font-size: 0.82rem;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .gallery-thumb:hover .thumb-label {
+    opacity: 1;
+  }
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(255,255,255,0.82);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: background 0.2s;
+  }
+  .gallery-thumb:hover .play-icon {
+    background: rgba(255,255,255,1);
+  }
+  .gallery-subsection {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+  .gallery-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.85rem;
+    max-width: 860px;
+  }
+  @media (max-width: 700px) {
+    .gallery-sidenav { display: none; }
+  }
 </style>
 
+<div class="gallery-wrapper">
 
-<section class="image-gallery">
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <a href="/images/Out2 Copy.jpg">
-                <img src="/images/Out2 Copy.jpg" alt="Description of Image 1">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="/images/Splash1.jpg">
-                <img src="/images/Splash1.jpg" alt="Description of Image 2">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="/images/fast_labels_fs=5_thresh=0.9.mp4" target="_blank">
-              <video width="100%" height="auto" controls>
-                <source src="/images/fast_labels_fs=5_thresh=0.9.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </a>
-          </div>
-        <div class="gallery-item">
-            <div class="video-wrapper">
-                <iframe 
-                    src="https://www.youtube.com/embed/uRvasupvYDU" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-        <!-- Add more images as necessary -->
+  <nav class="gallery-sidenav">
+    <a href="#visualizations">Visualizations</a>
+    <a href="#taylor-green">Taylor-Green</a>
+    <a href="#passive-scalars">Passive Scalars</a>
+  </nav>
+
+  <div class="gallery-main">
+
+    <!-- ===================== Visualizations ===================== -->
+    <div class="project-section" id="visualizations">
+      <h2>Visualizations</h2>
+      <div class="gallery-grid">
+
+        <a href="https://www.youtube.com/watch?v=uRvasupvYDU"
+           class="glightbox gallery-thumb"
+           data-gallery="videos"
+           data-title="Video title"
+           data-description="Description of this video.">
+          <img src="https://img.youtube.com/vi/uRvasupvYDU/maxresdefault.jpg" alt="YouTube video">
+          <div class="play-icon">&#9654;</div>
+          <div class="thumb-label">Video title</div>
+        </a>
+
+      </div>
     </div>
-</section>
 
+    <!-- ===================== Taylor-Green Vortex ===================== -->
+    <div class="project-section" id="taylor-green">
+      <h2>Taylor-Green Vortex</h2>
+      <p class="gallery-desc">
+        Evolution of the vertical derivative of density perturbations \(\rho'_z\), scaled by the background
+        density gradient \(|\bar{\rho}_z|\), compared across simulations at \(Pr = [1, 7, 50]\). As \(Pr\)
+        increases, progressively finer detail is visible in the density field.
+      </p>
+      <div class="gallery-grid">
 
+        <a href="{{ site.baseurl }}/images/TG.mp4"
+           class="glightbox gallery-thumb"
+           data-type="video"
+           data-gallery="tg"
+           data-title="Taylor-Green Vortex — time evolution at Pr = [1, 7, 50]"
+           data-description="Time evolution of the vertical density derivative across Prandtl numbers Pr = [1, 7, 50]. <a href='{{ site.baseurl }}/portfolio/taylorgreen/'>More info →</a>">
+          <video src="{{ site.baseurl }}/images/TG.mp4" preload="metadata" muted playsinline></video>
+          <div class="play-icon">&#9654;</div>
+          <div class="thumb-label">Time evolution — Pr = [1, 7, 50]</div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ===================== Passive Scalars ===================== -->
+    <div class="project-section" id="passive-scalars">
+      <h2>Passive Scalars in Stratified Turbulence</h2>
+
+      <h3 class="gallery-subsection">1 — Scalar mixing layers in decaying homogeneous turbulence</h3>
+      <p class="gallery-desc">
+        Based on case III in de Bruyn Kops and Riley (2019). The flow is initially homogeneous and isotropic
+        in power-law decay. At dimensionless time \(t^* = 1\), the density field is initialized with a uniform
+        gradient in \(z\) and stratified turbulence develops. Three passive scalar fields are imposed: two scalar
+        mixing layers varying in \(y\) and \(z\) respectively, and a narrow plume in \(x\).
+      </p>
+      <div class="gallery-grid">
+
+        <a href="{{ site.baseurl }}/images/z0_fps5.webm"
+           class="glightbox gallery-thumb"
+           data-type="video"
+           data-gallery="passive-decay"
+           data-title="Evolution of ξ₁"
+           data-description="Initialized with periodic scalar mixing layers in the z-direction.">
+          <video src="{{ site.baseurl }}/images/z0_fps5.webm" preload="metadata" muted playsinline></video>
+          <div class="play-icon">&#9654;</div>
+          <div class="thumb-label">ξ₁ — mixing layer (z)</div>
+        </a>
+
+        <a href="{{ site.baseurl }}/images/z1_fps5.webm"
+           class="glightbox gallery-thumb"
+           data-type="video"
+           data-gallery="passive-decay"
+           data-title="Evolution of ξ₂"
+           data-description="Initialized with periodic scalar mixing layers in the x-direction.">
+          <video src="{{ site.baseurl }}/images/z1_fps5.webm" preload="metadata" muted playsinline></video>
+          <div class="play-icon">&#9654;</div>
+          <div class="thumb-label">ξ₂ — mixing layer (x)</div>
+        </a>
+
+        <a href="{{ site.baseurl }}/images/z2_fps5.webm"
+           class="glightbox gallery-thumb"
+           data-type="video"
+           data-gallery="passive-decay"
+           data-title="Evolution of ξ₃"
+           data-description="Initialized with a small plume in the y-direction. Only a portion of the domain is shown.">
+          <video src="{{ site.baseurl }}/images/z2_fps5.webm" preload="metadata" muted playsinline></video>
+          <div class="play-icon">&#9654;</div>
+          <div class="thumb-label">ξ₃ — plume (y)</div>
+        </a>
+
+      </div>
+
+      <h3 class="gallery-subsection">2 — Passive scalar in stationary homogeneous sheared stratified turbulence</h3>
+      <p class="gallery-desc">
+        Based on case R1 in Portwood et al. (2022). Shear and gravity are tuned so that the flow is
+        quasi-stationary. The active scalar has \(Pr = 7\) and the passive scalar has \(Pr = 50\), both with
+        the same stationary mean gradient. The passive scalar starts identical to the density; finer scales
+        develop as time advances. Top panel shows the full \(xz\) slice; lower panels show passive scalar
+        and density in a subdomain at full resolution.
+      </p>
+      <div class="gallery-grid">
+
+        <a href="{{ site.baseurl }}/images/R1P7-50_fps5.webm"
+           class="glightbox gallery-thumb"
+           data-type="video"
+           data-gallery="passive-shear"
+           data-title="Density and passive scalar — sheared stratified turbulence"
+           data-description="Active scalar Pr = 7, passive scalar Pr = 50. Based on case R1 (Portwood et al., 2022).">
+          <video src="{{ site.baseurl }}/images/R1P7-50_fps5.webm" preload="metadata" muted playsinline></video>
+          <div class="play-icon">&#9654;</div>
+          <div class="thumb-label">Density &amp; passive scalar</div>
+        </a>
+
+      </div>
+
+      <h3 class="gallery-subsection">3 — Passive plumes in stationary homogeneous sheared stratified turbulence</h3>
+      <p class="gallery-desc">
+        Based on case R1 in Portwood et al. (2022). Active scalar \(Pr = 7\), passive plumes \(Pr = 50\).
+        Top panels show full \(xy\), \(xz\), and \(yz\) slices of the plumes; lower panels show a subdomain
+        with locations outlined in white in the top panels.
+      </p>
+      <div class="gallery-grid">
+
+        <a href="{{ site.baseurl }}/images/R1P7-50_Z1_fps5.webm"
+           class="glightbox gallery-thumb"
+           data-type="video"
+           data-gallery="passive-plumes"
+           data-title="Streamwise plume — sheared stratified turbulence"
+           data-description="Passive plume Pr = 50 in quasi-stationary sheared stratified turbulence. Based on case R1 (Portwood et al., 2022).">
+          <video src="{{ site.baseurl }}/images/R1P7-50_Z1_fps5.webm" preload="metadata" muted playsinline></video>
+          <div class="play-icon">&#9654;</div>
+          <div class="thumb-label">Streamwise plume</div>
+        </a>
+
+        <a href="{{ site.baseurl }}/images/R1P7-50_Z2_fps5.webm"
+           class="glightbox gallery-thumb"
+           data-type="video"
+           data-gallery="passive-plumes"
+           data-title="Cross-stream plume — sheared stratified turbulence"
+           data-description="Passive plume Pr = 50 in quasi-stationary sheared stratified turbulence. Based on case R1 (Portwood et al., 2022).">
+          <video src="{{ site.baseurl }}/images/R1P7-50_Z2_fps5.webm" preload="metadata" muted playsinline></video>
+          <div class="play-icon">&#9654;</div>
+          <div class="thumb-label">Cross-stream plume</div>
+        </a>
+
+      </div>
+    </div>
+
+  </div><!-- .gallery-main -->
+</div><!-- .gallery-wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
+<script>
+  GLightbox({ touchNavigation: true, loop: false, descPosition: 'bottom' });
+
+  // Highlight active section in sidebar as user scrolls
+  const sections = document.querySelectorAll('.project-section');
+  const navLinks = document.querySelectorAll('.gallery-sidenav a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.gallery-sidenav a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>

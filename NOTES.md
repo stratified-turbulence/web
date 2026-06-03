@@ -33,5 +33,15 @@ bundle exec jekyll serve --livereload
 
 Requires Ruby and Bundler. Run `bundle install` first if dependencies aren't installed yet.
 
+## Reordering Gallery Sections
+
+Sections appear in the order their blocks are written in `_pages/gallery.html`.
+To reorder:
+
+1. In `gallery.html`, cut and paste the `<div class="project-section" id="...">...</div>` blocks into the desired order.
+2. Update the `<nav class="gallery-sidenav">` links at the top of the file to match — the `<a>` tags must be in the same order as the section blocks or the sidebar will be out of sync.
+
+The nav links and section blocks are the only two things to keep in sync.
+
 ## Notes
 
