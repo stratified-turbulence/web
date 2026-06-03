@@ -184,6 +184,8 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - NOTES.md
+  - CLAUDE.md
   - tmp
   - vendor
 keep_files:
