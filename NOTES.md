@@ -43,5 +43,41 @@ To reorder:
 
 The nav links and section blocks are the only two things to keep in sync.
 
+## Customizing the Publications Page
+
+Each publication is a file in `_publications/` with YAML front matter. The page at `_pages/publications.html` iterates over these files automatically.
+
+### Adding a new publication
+Create a new `.md` file in `_publications/` (e.g. `2025_Smith_JFM.md`) with this structure:
+
+```yaml
+---
+title: "Paper title"
+collection: publications
+category: manuscripts        # manuscripts | conferences | books | archive
+link: https://doi.org/...
+authors: Smith, J., and de Bruyn Kops, S.M.
+journal: Journal of Fluid Mechanics
+volume: 999, A1              # optional
+year: 2025
+image: /web/images/publications/2025_Smith_JFM.jpg   # optional
+dataset: Forced              # optional — shown as a tag linking to /Datasets/
+---
+```
+
+Drop the image into `images/publications/` using the same filename convention.
+
+### Changing a dataset tag
+Edit the `dataset:` field in the relevant `_publications/` file. Current values in use: `Forced`, `Sheared`, `Taylor-Green`. Leave blank to show no tag.
+
+### Changing card appearance
+Edit the `<style>` block at the top of `_pages/publications.html`:
+- Card image size: `.pub-image` width and `.pub-image img` height
+- Font sizes: `.pub-title`, `.pub-authors`, `.pub-venue`
+- Tag style: `.pub-dataset`
+
+### Publication categories
+Categories are defined in `_config.yml` under `publication_category`. The order there controls the order of sections on the page.
+
 ## Notes
 

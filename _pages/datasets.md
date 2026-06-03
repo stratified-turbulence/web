@@ -5,6 +5,69 @@ permalink: /Datasets/
 author_profile: false
 ---
 
+<style>
+  .datasets-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .datasets-sidenav {
+    position: sticky;
+    top: 80px;
+    width: 170px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 0.75rem;
+  }
+  .datasets-sidenav .nav-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin-bottom: 0.25rem;
+  }
+  .datasets-sidenav a {
+    font-size: 0.82rem;
+    color: #888;
+    text-decoration: none;
+    padding: 0.25rem 0;
+    line-height: 1.3;
+    border-left: 2px solid transparent;
+    margin-left: -0.85rem;
+    padding-left: 0.75rem;
+    transition: color 0.2s;
+  }
+  .datasets-sidenav a:hover { color: #222; }
+  .datasets-sidenav a.active {
+    color: #222;
+    border-left-color: #222;
+    font-weight: 600;
+  }
+  .datasets-main {
+    flex: 1;
+    min-width: 0;
+  }
+  .dataset-card {
+    scroll-margin-top: 20px;
+  }
+  @media (max-width: 700px) {
+    .datasets-sidenav { display: none; }
+  }
+</style>
+
+<div class="datasets-wrapper">
+<nav class="datasets-sidenav">
+  <span class="nav-label">Jump To</span>
+  <a href="#taylor-green">Taylor-Green</a>
+  <a href="#forced-shear">Forced, shear</a>
+  <a href="#forced-noshear">Forced, no shear</a>
+  <a href="#decaying">Decaying</a>
+</nav>
+<div class="datasets-main" markdown="1">
+
 # Datasets
 
 Datasets, and associated analysis tools, will progressively be added to the tables below. Data are hosted on the <a href="https://doi.ccs.ornl.gov/" target="_blank">Constellation repository</a> and may be downloaded to a local computer using <a href="https://www.globus.org/" target="_blank">Globus</a>. Not all data are currently uploaded to Constellation; please contact the group if you are interested in any datasets that are not yet available. 
@@ -202,7 +265,7 @@ DNS runs may be broadly categorized as follows, with further details and downloa
 Once downloaded, data may be accessed using scripts provided <a href="https://github.com/muralikrishnangm/getData-SST.git" target="_blank">in this Github Respository</a>, which includes Python scripts for extracting subdomains and visualizing snapshots.
 
 
-<div style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
+<div id="taylor-green" class="dataset-card" style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
   <!-- Two-column section -->
   <div style="display: flex; align-items: center; justify-content: space-between; gap: 2em;">
     <div style="flex: 1;">
@@ -242,7 +305,54 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
 
 
 
-<div style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
+<div id="forced-shear" class="dataset-card" style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
+  <!-- Two-column section -->
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 2em;">
+    <div style="flex: 1;">
+      <h2 style="margin-top: 0;">Forced, vertical shear</h2>
+<div markdown="1">
+- Fifteen datasets spannin three $Pr=\nu/\kappa=\left[1,7,50\right]$ and five buoyancy Reynolds numbers $(Re_b)=[30,1000]$
+- Fixed Richardson number $Ri\approx 0.15$
+
+</div>
+      <!-- <p> Three datasets spanning Prandtl numbers $Pr={1,7,50}$ with fixed Froude $Fr=4/(2 \pi) \approx 0.64$ and Reynolds $Re=3200$ numbers.</p>
+      <p><a href="/web/portfolio/taylorgreen/" style="color: #007acc; font-weight: bold;">Video and further details →</a></p> -->
+    </div>
+    <div style="flex: 1;">
+      <img src="/web/images/sheared.jpg" alt="Taylor-Green" style="width: 100%; border: none;">
+    </div>
+  </div>
+
+  <!-- Full-width section -->
+  <div style="margin-top: 2em;">
+
+  <div markdown="1">
+
+  Data uploaded expected to be complete by August 2026.
+
+  | Name and dataset link | $Pr$ |  $Gn$ | Grid points $(N_x, N_y, N_z)$ | Field size (per variable, snapshot) |
+  | --------           | ------ | ------|        |
+  | R1P1    | 1   | 34.7  | $1536 \times 768 \times 384$      | 1.7 GB   |
+  | R1P7    | 7   | 34.0  | $3072 \times 1536 \times 768$     | 13 GB    |
+  | R1P50   | 50  | 35.7  | $8000 \times 4000 \times 2000$    | 233 GB   |
+  | R4P1    | 1   | 81.3  | $2048 \times 1024 \times 512$     | 3.8 GB   |
+  | R4P7    | 7   | 83.1  | $5120 \times 2560 \times 1280$    | 62 GB    |
+  | R4P50   | 50  | 84.0  | $16000 \times 8000 \times 4000$   | 1.87 TB  |
+  | R6P1    | 1   | 213   | $3072 \times 1536 \times 768$     | 13 GB    |
+  | R6P7    | 7   | 202   | $12288 \times 6144 \times 3072$   | 0.85 TB  |
+  | R6P50   | 50  | 217   | $24000 \times 12000 \times 6000$  | 6.2 TB   |
+  | R8P1    | 1   | 516   | $8736 \times 4368 \times 2184$    | 0.30 TB  |
+  | R8P7    | 7   | 525   | $23040 \times 11520 \times 5760$  | 5.5 TB   |
+  | R10P1   | 1   | 1026  | $12288 \times 6144 \times 3072$   | 0.85 TB  |
+  | R10P7   | 7   | 813   | $31680 \times 15840 \times 7920$  | 14.5 TB  |
+
+  </div>
+  </div>
+</div>
+
+
+
+<div id="forced-noshear" class="dataset-card" style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
   <!-- Two-column section -->
   <div style="display: flex; align-items: center; justify-content: space-between; gap: 2em;">
     <div style="flex: 1;">
@@ -268,6 +378,42 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
 
   Data not currently uploaded to Constellation. Please contact group for access.
 
+  All values below are for $Pr = 1$.
+
+  | Name, dataset link, parameter file | $Fr_h$ | $Gn$ | $Re_b$ | Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) |
+  | -------- | ------ | ------ | ------ | ------ | ------ |
+  | F025Gn0014  | 0.039 | 14   | 58   | $14784 \times 14784 \times 1840$ | 1.61 TB  |
+  | F035Gn0014  | 0.056 | 16   | 57   | $6144 \times 6144 \times 768$    | 116 GB   |
+  | F050Gn0014  | 0.086 | 16   | 55   | $2048 \times 2048 \times 256$    | 4.3 GB   |
+  | F070Gn0014  | 0.124 | 12   | 56   | $2048 \times 2048 \times 256$    | 4.3 GB   |
+  | F100Gn0014  | 0.155 | 15   | 50   | $2048 \times 2048 \times 512$    | 8.6 GB   |
+  | F150Gn0014  | 0.257 | 15   | 54   | $1024 \times 1024 \times 512$    | 2.1 GB   |
+  | F200Gn0014  | 0.335 | 16   | 51   | $512 \times 512 \times 256$      | 268 MB   |
+  | F300Gn0014  | 0.449 | 15   | 27   | $512 \times 512 \times 512$      | 537 MB   |
+  | F400Gn0014  | 0.556 | 15   | 23   | $256 \times 256 \times 256$      | 67 MB    |
+  | F500Gn0014  | 0.713 | 14   | 21   | $128 \times 128 \times 128$      | 8.4 MB   |
+  | F025Gn0050  | 0.027 | 45   | 150  | $18432 \times 18432 \times 2304$ | 3.13 TB  |
+  | F050Gn0050  | 0.070 | 53   | 154  | $8192 \times 8192 \times 1024$   | 275 GB   |
+  | F100Gn0050  | 0.142 | 65   | 247  | $4096 \times 4096 \times 1024$   | 68.7 GB  |
+  | F200Gn0050  | 0.334 | 45   | 170  | $2048 \times 2048 \times 1024$   | 17.2 GB  |
+  | F400Gn0050  | 0.607 | 44   | 163  | $512 \times 512 \times 512$      | 537 MB   |
+  | F600Gn0050  | 0.870 | 51   | 101  | $256 \times 256 \times 256$      | 67 MB    |
+  | F800Gn0050  | 1.294 | 50   | 85   | $128 \times 128 \times 128$      | 8.4 MB   |
+  | F025Gn0200  | 0.041 | 207  | 1521 | $16384 \times 16384 \times 2048$ | 2.20 TB  |
+  | F050Gn0200  | 0.105 | 194  | 543  | $14784 \times 14784 \times 1848$ | 1.62 TB  |
+  | F100Gn0200  | 0.209 | 202  | 868  | $16384 \times 16384 \times 4096$ | 4.40 TB  |
+  | F200Gn0200  | 0.322 | 207  | 729  | $4096 \times 4096 \times 2048$   | 137 GB   |
+  | F400Gn0200  | 0.648 | 202  | 689  | $512 \times 512 \times 512$      | 537 MB   |
+  | F800Gn0200  | 1.438 | 197  | 521  | $512 \times 512 \times 512$      | 537 MB   |
+  | F1600Gn0200 | 2.578 | 206  | 443  | $256 \times 256 \times 256$      | 67 MB    |
+  | F025Gn1000  | 0.026 | 1278 | 3200 | $15840 \times 15840 \times 1980$ | 1.99 TB  |
+  | F100Gn1000  | 0.210 | 1185 | 2862 | $14784 \times 14784 \times 3696$ | 3.23 TB  |
+  | F200Gn1000  | 0.419 | 1368 | 5263 | $14784 \times 14784 \times 7392$ | 6.46 TB  |
+  | F400Gn1000  | 0.564 | 929  | 2957 | $3072 \times 3072 \times 3072$   | 116 GB   |
+  | F800Gn1000  | 2.078 | 1044 | 5878 | $1024 \times 1024 \times 1024$   | 4.3 GB   |
+  | F1600Gn1000 | 3.619 | 1066 | 5356 | $512 \times 512 \times 512$      | 537 MB   |
+
+  **$Pr = 7, 50$**
 
   |Name, dataset link, parameter file | $Pr$ |  $Fr_h$ | Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) 
   | --------          | ------ | ------|        |
@@ -286,56 +432,7 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
 </div>
 
 
-
-<div style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
-  <!-- Two-column section -->
-  <div style="display: flex; align-items: center; justify-content: space-between; gap: 2em;">
-    <div style="flex: 1;">
-      <h2 style="margin-top: 0;">Forced, vertical shear</h2>
-<div markdown="1">
-- Fifteen datasets spannin three $Pr=\nu/\kappa=\left[1,7,50\right]$ and five buoyancy Reynolds numbers $(Re_b)=[30,1000]$
-- Fixed Richardson number $Ri\approx 0.15$
-
-</div>
-      <!-- <p> Three datasets spanning Prandtl numbers $Pr={1,7,50}$ with fixed Froude $Fr=4/(2 \pi) \approx 0.64$ and Reynolds $Re=3200$ numbers.</p>
-      <p><a href="/web/portfolio/taylorgreen/" style="color: #007acc; font-weight: bold;">Video and further details →</a></p> -->
-    </div>
-    <div style="flex: 1;">
-      <img src="/web/images/sheared.jpg" alt="Taylor-Green" style="width: 100%; border: none;">
-    </div>
-  </div>
-
-  <!-- Full-width section -->
-  <div style="margin-top: 2em;">
-
-  <div markdown="1">
-
-  Data not currently uploaded to Constellation. Please contact group for access.
-
-  | Name and dataset link | $Pr$ |  $Gn$ | Grid points $(N_x, N_y, N_z)$ | Field size (per variable, snapshot) |
-  | --------           | ------ | ------|        |
-  | S_P1Gn30    | 1     | 34.7 |  $1536 \times 768 \times 384$ |
-  | S_P7Gn30    | 7     | 33.9 |  $3072 \times 1536 \times 768$ |
-  | S_P50Gn30   | 50    | 35.5 |  $2560 \times 1280 \times 640$ |
-  | S_P1Gn80    | 1     | 81.1 |  (in progress)
-  | S_P7Gn80    | 7     | 83.0 |  $5120 \times 2560 \times 1280$ |
-  | S_P50Gn80   | 50    | 83.9 |  $8192 \times 4096 \times 2048$ |
-  | S_P1Gn200   | 1     | 210 |   $1536 \times 768 \times 384$ |
-  | S_P7Gn200   | 7     | 207 |   $8192 \times 4096 \times 2048$ |
-  | S_P50Gn200  | 50    | 206 |   (in progress)
-  | S_P1Gn600   | 1     | 687 |   $7168 \times 3584 \times 1792$ |
-  | S_P7Gn600   | 7     | 528 |   $23040 \times 11520 \times 5760$ |
-  | S_P50Gn600   | 50    |  | (planned run)
-  | S_P1Gn1000  | 1     | 1013|  $7168 \times 3584 \times 1792$ |
-  | S_P7Gn1000  | 7     | 821 |  $31680 \times 15840 \times 7920$ |
-  | S_P50Gn1000   | 50    |  | (planned run)
-
-  </div>
-  </div>
-</div>
-
-
-<div style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
+<div id="decaying" class="dataset-card" style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
   <!-- Two-column section -->
   <div style="display: flex; align-items: center; justify-content: space-between; gap: 2em;">
     <div style="flex: 1;">
@@ -368,4 +465,20 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
         height="600px" 
         style="border: none;"></iframe> -->
 
+</div><!-- .datasets-main -->
+</div><!-- .datasets-wrapper -->
 
+<script>
+  const sections = document.querySelectorAll('.dataset-card');
+  const navLinks = document.querySelectorAll('.datasets-sidenav a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.datasets-sidenav a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
