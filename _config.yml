@@ -186,6 +186,8 @@ exclude:
   - README
   - NOTES.md
   - CLAUDE.md
+  - DEMO_README.md
+  - download_data.ipynb
   - tmp
   - vendor
 keep_files:

@@ -19,6 +19,8 @@ Published at: https://stratified-turbulence.github.io/web
 
 Run the site locally with:
 
+pwd /Users/mcouchman/Documents/York/Research/StratTurbWebsite/web
+
 ```bash
 bundle exec jekyll serve
 ```

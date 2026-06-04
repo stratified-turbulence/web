@@ -176,9 +176,9 @@ author_profile: false
       </div>
     </div>
 
-    <!-- ===================== Taylor-Green Vortex ===================== -->
+    <!-- ===================== Taylor-green ===================== -->
     <div class="project-section" id="taylor-green">
-      <h2>Taylor-Green Vortex</h2>
+      <h2>Taylor-green</h2>
       <p class="gallery-desc">
         Evolution of the vertical derivative of density perturbations \(\rho'_z\), scaled by the background
         density gradient \(|\bar{\rho}_z|\), compared across simulations at \(Pr = [1, 7, 50]\). As \(Pr\)
@@ -186,13 +186,35 @@ author_profile: false
       </p>
       <div class="gallery-grid">
 
-        <a href="{{ site.baseurl }}/images/TG.mp4"
+        <a href="{{ site.baseurl }}/images/TG.webm"
            class="glightbox gallery-thumb"
            data-type="video"
            data-gallery="tg"
            data-title="Taylor-Green Vortex — time evolution at Pr = [1, 7, 50]"
            data-description="Time evolution of the vertical density derivative across Prandtl numbers Pr = [1, 7, 50]. <a href='{{ site.baseurl }}/portfolio/taylorgreen/'>More info →</a>">
-          <video src="{{ site.baseurl }}/images/TG.mp4" preload="metadata" muted playsinline></video>
+          <video src="{{ site.baseurl }}/images/TG.webm" poster="{{ site.baseurl }}/images/poster_TG.jpg" preload="none" muted playsinline></video>
+          <div class="play-icon">&#9654;</div>
+          <div class="thumb-label">Time evolution — Pr = [1, 7, 50]</div>
+        </a>
+
+      </div>
+    </div>
+
+     <!-- ===================== Forced ===================== -->
+    <div class="project-section" id="forced">
+      <h2>Forced</h2>
+      <p class="gallery-desc">
+        Text
+      </p>
+      <div class="gallery-grid">
+
+        <a href="{{ site.baseurl }}/images/6panel_zsweep_ds8_sigma150_k5.webm"
+           class="glightbox gallery-thumb"
+           data-type="video"
+           data-gallery="forced"
+           data-title="Forced"
+           data-description="Text">
+          <video src="{{ site.baseurl }}/images/6panel_zsweep_ds8_sigma150_k5.webm" poster="{{ site.baseurl }}/images/poster_6panel.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
           <div class="thumb-label">Time evolution — Pr = [1, 7, 50]</div>
         </a>
@@ -219,7 +241,7 @@ author_profile: false
            data-gallery="passive-decay"
            data-title="Evolution of ξ₁"
            data-description="Initialized with periodic scalar mixing layers in the z-direction.">
-          <video src="{{ site.baseurl }}/images/z0_fps5.webm" preload="metadata" muted playsinline></video>
+          <video src="{{ site.baseurl }}/images/z0_fps5.webm" poster="{{ site.baseurl }}/images/poster_z0.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
           <div class="thumb-label">ξ₁ — mixing layer (z)</div>
         </a>
@@ -230,7 +252,7 @@ author_profile: false
            data-gallery="passive-decay"
            data-title="Evolution of ξ₂"
            data-description="Initialized with periodic scalar mixing layers in the x-direction.">
-          <video src="{{ site.baseurl }}/images/z1_fps5.webm" preload="metadata" muted playsinline></video>
+          <video src="{{ site.baseurl }}/images/z1_fps5.webm" poster="{{ site.baseurl }}/images/poster_z1.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
           <div class="thumb-label">ξ₂ — mixing layer (x)</div>
         </a>
@@ -241,7 +263,7 @@ author_profile: false
            data-gallery="passive-decay"
            data-title="Evolution of ξ₃"
            data-description="Initialized with a small plume in the y-direction. Only a portion of the domain is shown.">
-          <video src="{{ site.baseurl }}/images/z2_fps5.webm" preload="metadata" muted playsinline></video>
+          <video src="{{ site.baseurl }}/images/z2_fps5.webm" poster="{{ site.baseurl }}/images/poster_z2.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
           <div class="thumb-label">ξ₃ — plume (y)</div>
         </a>
@@ -264,7 +286,7 @@ author_profile: false
            data-gallery="passive-shear"
            data-title="Density and passive scalar — sheared stratified turbulence"
            data-description="Active scalar Pr = 7, passive scalar Pr = 50. Based on case R1 (Portwood et al., 2022).">
-          <video src="{{ site.baseurl }}/images/R1P7-50_fps5.webm" preload="metadata" muted playsinline></video>
+          <video src="{{ site.baseurl }}/images/R1P7-50_fps5.webm" poster="{{ site.baseurl }}/images/poster_R1P7-50.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
           <div class="thumb-label">Density &amp; passive scalar</div>
         </a>
@@ -285,7 +307,7 @@ author_profile: false
            data-gallery="passive-plumes"
            data-title="Streamwise plume — sheared stratified turbulence"
            data-description="Passive plume Pr = 50 in quasi-stationary sheared stratified turbulence. Based on case R1 (Portwood et al., 2022).">
-          <video src="{{ site.baseurl }}/images/R1P7-50_Z1_fps5.webm" preload="metadata" muted playsinline></video>
+          <video src="{{ site.baseurl }}/images/R1P7-50_Z1_fps5.webm" poster="{{ site.baseurl }}/images/poster_R1P7-50_Z1.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
           <div class="thumb-label">Streamwise plume</div>
         </a>
@@ -296,7 +318,7 @@ author_profile: false
            data-gallery="passive-plumes"
            data-title="Cross-stream plume — sheared stratified turbulence"
            data-description="Passive plume Pr = 50 in quasi-stationary sheared stratified turbulence. Based on case R1 (Portwood et al., 2022).">
-          <video src="{{ site.baseurl }}/images/R1P7-50_Z2_fps5.webm" preload="metadata" muted playsinline></video>
+          <video src="{{ site.baseurl }}/images/R1P7-50_Z2_fps5.webm" poster="{{ site.baseurl }}/images/poster_R1P7-50_Z2.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
           <div class="thumb-label">Cross-stream plume</div>
         </a>

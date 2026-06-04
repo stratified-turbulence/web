@@ -8,5 +8,5 @@ journal: Journal of Fluid Mechanics
 volume: 977, A37
 year: 2023
 image: /web/images/publications/2023_Lewin_JFM.jpg
-dataset: Sheared
+dataset: Forced vertical shear
 ---

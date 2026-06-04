@@ -16,7 +16,10 @@ main:
     url: /Publications/
 
   - title: "Gallery"
-    url: /Gallery/   
+    url: /Gallery/
+
+  - title: "Demo"
+    url: /Demo/
 
   # - title: "Archive Layout with Content"
   #   url: /archive-layout-with-content/
