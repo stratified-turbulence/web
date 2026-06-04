@@ -15,6 +15,21 @@ Published at: https://stratified-turbulence.github.io/web
 - `assets/` — CSS, JS, images
 - `files/` — downloadable files (PDFs, etc.)
 
+## Pushing to GitHub
+
+The repo is at `https://github.com/stratified-turbulence/web.git`, branch `master`.
+
+```bash
+cd /Users/mcouchman/Documents/York/Research/StratTurbWebsite/web
+git add -A
+git commit -m "Your commit message"
+git push origin master
+```
+
+GitHub Actions rebuilds and deploys the site automatically after each push. The live site updates within a minute or two at https://stratified-turbulence.github.io/web.
+
+To check the status of the build: go to the repo on GitHub → **Actions** tab.
+
 ## Local Preview
 
 Run the site locally with:
