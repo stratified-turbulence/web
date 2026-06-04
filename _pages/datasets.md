@@ -378,7 +378,10 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
 
   Data not currently uploaded to Constellation. Please contact group for access.
 
-  All values below are for $Pr = 1$.
+  Datasets in the first table below are all at $Pr = 1$.
+  Datasets in the second table extend to $Pr = 7$ and $Pr = 50$.
+
+  **$Pr = 1$**
 
   | Name, dataset link, parameter file | $Fr_h$ | $Gn$ | $Re_b$ | Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) |
   | -------- | ------ | ------ | ------ | ------ | ------ |
@@ -415,17 +418,14 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
 
   **$Pr = 7, 50$**
 
-  |Name, dataset link, parameter file | $Pr$ |  $Fr_h$ | Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) 
-  | --------          | ------ | ------|        |
-  | F_P1F050Gn50    | 1     | 0.5  | $8192^2 \times 1024$  | 275 GB|
-  | F_P1F100Gn50    | 1     | 1  | $4096^2 \times 1024$  | 275 GB|
-  | F_P1F200Gn50    | 1     | 2   | $2048^2 \times 1024$  | 17 GB| 
-  | F_P7F050Gn50    | 7     | 0.5   | $30240^2 \times 3780$ | 13.8 TB |
-  | F_P7F100Gn50    | 7     | 1   | $8192^2 \times 2048$  | 550 GB|
-  | F_P7F200Gn50    | 7     | 2   | $6144^2 \times 3072$  | 464 GB | 
-  | F_P50F050Gn50   | 50    | 0.5   | $37632^2 \times 4704$ |26.6 TB|
-  | F_P50F100Gn50   | 50    | 1   | $28672^2 \times 7168$ |23.6 TB|
-  | F_P50F200Gn50   | 50    | 2   | $8192^2 \times 4096$  |1.01 TB|
+  | Name | $Pr$ | $Fr_h$ | $Gn$ | $Re_b$ | Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) |
+  | ---- | ---- | ------ | ---- | ------ | ----------------------------- | ----------------------------------- |
+  | P7F050Gn0050  | 7  | 0.078 | 57 | 143 | $30240^2 \times 3780$ | 13.8 TB |
+  | P7F100Gn0050  | 7  | 0.156 | 54 | 136 | $8192^2 \times 2048$  | 550 GB  |
+  | P7F200Gn0050  | 7  | 0.289 | 64 | 185 | $6144^2 \times 3072$  | 464 GB  |
+  | P50F050Gn0050 | 50 | 0.073 | 54 | 145 | $37632^2 \times 4704$ | 26.6 TB |
+  | P50F100Gn0050 | 50 | 0.164 | 47 | 142 | $28672^2 \times 7168$ | 23.6 TB |
+  | P50F200Gn0050 | 50 | 0.315 | 66 | 158 | $8192^2 \times 4096$  | 1.1 TB  |
 
   </div>
   </div>
