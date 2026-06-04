@@ -328,7 +328,7 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
 
   <div markdown="1">
 
-  Data uploaded expected to be complete by August 2026.
+  Data upload expected to be complete by August 2026.
 
   | Name and dataset link | $Pr$ |  $Gn$ | Grid points $(N_x, N_y, N_z)$ | Field size (per variable, snapshot) |
   | --------           | ------ | ------|        |

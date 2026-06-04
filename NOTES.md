@@ -98,3 +98,16 @@ Categories are defined in `_config.yml` under `publication_category`. The order 
 
 ## Notes
 
+### WebM videos not playing locally (fallback to MP4)
+
+Jekyll's local WEBrick server doesn't register the `video/webm` MIME type by default, so browsers reject `.webm` sources and fall back to `.mp4`.
+
+Fix: `_plugins/mime_types.rb` registers the correct MIME type at server startup:
+
+```ruby
+require 'webrick'
+WEBrick::HTTPUtils::DefaultMimeTypes.update('webm' => 'video/webm')
+```
+
+This only affects `bundle exec jekyll serve` — it has no effect on the GitHub Pages build.
+

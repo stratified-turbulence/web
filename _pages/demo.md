@@ -1,7 +1,7 @@
 ---
 layout: splash
-title: "Demo"
-permalink: /Demo/
+title: "Demos"
+permalink: /Demos/
 author_profile: false
 ---
 
@@ -29,7 +29,7 @@ author_profile: false
   }
 </style>
 
-## Download and Load a Dataset Snapshot
+## 1. Download and interactively visualize a snapshot in time
 
 This interactive demo runs entirely in Google Colab — no local installation required. It walks you through authenticating with Globus, downloading one snapshot from the [SST-TG-P1F4R3200](https://doi.ccs.ornl.gov/dataset/5be73ed1-f138-504e-9851-4dff0f465a1d) dataset (Taylor-Green: Pr = 1, Fr = 4, Re = 3200), and visualizing the downloaded files.
 
@@ -42,5 +42,8 @@ This interactive demo runs entirely in Google Colab — no local installation re
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height: 32px;">
   </a>
 </div>
+
+
+## More demos coming soon...
 
 

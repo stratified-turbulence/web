@@ -18,8 +18,8 @@ main:
   - title: "Gallery"
     url: /Gallery/
 
-  - title: "Demo"
-    url: /Demo/
+  - title: "Demos"
+    url: /Demos/
 
   # - title: "Archive Layout with Content"
   #   url: /archive-layout-with-content/

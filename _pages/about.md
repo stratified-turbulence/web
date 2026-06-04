@@ -54,7 +54,7 @@ hidden: true
   /* ── Feature cards ── */
   .feature-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin: 2.5rem 0 2rem 0;
   }
@@ -163,6 +163,15 @@ hidden: true
       <h3>Publications</h3>
       <p>Journal articles and conference papers.</p>
       <span class="feature-card-btn">Read →</span>
+    </div>
+  </a>
+
+  <a href="{{ site.baseurl }}/Demos/" class="feature-card">
+    <img src="{{ site.baseurl }}/images/DemoIm.png" alt="Demos">
+    <div class="feature-card-body">
+      <h3>Demos</h3>
+      <p>Interactive demos and code for data exploration.</p>
+      <span class="feature-card-btn">Try →</span>
     </div>
   </a>
 
