@@ -70,9 +70,9 @@ author_profile: false
 
 # Datasets
 
-Datasets, and associated analysis tools, will progressively be added to the tables below. Data are hosted on the <a href="https://doi.ccs.ornl.gov/" target="_blank">Constellation repository</a> and may be downloaded to a local computer using <a href="https://www.globus.org/" target="_blank">Globus</a>. Not all data are currently uploaded to Constellation; please contact the group if you are interested in any datasets that are not yet available. 
+Datasets, and associated analysis tools and demos, will progressively be added to the tables below. Data are hosted on the <a href="https://doi.ccs.ornl.gov/" target="_blank">Constellation repository</a> and may be downloaded to a local computer using <a href="https://www.globus.org/" target="_blank">Globus</a>. If you are interesting in exploring datasets not currently archived on Constellation, please contact the group. 
 
-Further details about the simulations are provided within the collapsible headings below.
+General details about the simulations are provided within the collapsible headings below.
 
 
 <details>
@@ -243,7 +243,7 @@ Files are stored on the [Constellation repository](https://doi.ccs.ornl.gov/), w
 The numerical precision (single or double) of the saved data is specified, and varies between datasets. To easily detect errors in reading and reshaping the raw data, two zeros are padded onto the end of the $x$-dimension. The datafiles thus have size $\left(N_{x}+2\right)\times N_{y}\times N_{z}$. Python code is provided to read and save a given binary file as a three-dimensional array (e.g. as a NumPy array). For the larger datasets, it is advisable to use a memory map to avoid overloading your local RAM.  -->
 
 
-## Database {#datasets}
+## Types of flows {#datasets}
 
 DNS runs may be broadly categorized as follows, with further details and download links (if available) provided in the following tables:
 
@@ -262,7 +262,7 @@ DNS runs may be broadly categorized as follows, with further details and downloa
         - Methodology: <a href="https://doi.org/10.1063/1.1578077" target="_blank">Riley and de Bruyn Kops, *PoF*, 2003</a> 
 
 
-Once downloaded, data may be accessed using scripts provided <a href="https://github.com/muralikrishnangm/getData-SST.git" target="_blank">in this Github Respository</a>, which includes Python scripts for extracting subdomains and visualizing snapshots.
+
 
 
 <div id="taylor-green" class="dataset-card" style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
@@ -359,8 +359,7 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
       <h2 style="margin-top: 0;">Forced no shear</h2>
       
 <div markdown="1">
-- Nine datasets spanning $Pr=\nu/\kappa=\left[1,7,50\right]$ and $Fr=2\pi U/\left(NL\right)=\left[0.5,1,2\right]$
-- Fixed $Re_b \approx 50$
+- Various datasets spanning $Pr=\nu/\kappa$,$Fr=2\pi U/\left(NL\right)$ and $Gn$
 </div>
 
       <!-- <p> Three datasets spanning Prandtl numbers $Pr={1,7,50}$ with fixed Froude $Fr=4/(2 \pi) \approx 0.64$ and Reynolds $Re=3200$ numbers.</p>
@@ -378,54 +377,49 @@ Once downloaded, data may be accessed using scripts provided <a href="https://gi
 
   Data not currently uploaded to Constellation. Please contact group for access.
 
-  Datasets in the first table below are all at $Pr = 1$.
-  Datasets in the second table extend to $Pr = 7$ and $Pr = 50$.
-
-  **$Pr = 1$**
-
-  | Name, dataset link, parameter file | $Fr_h$ | $Gn$ | $Re_b$ | Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) |
-  | -------- | ------ | ------ | ------ | ------ | ------ |
-  | F025Gn0014  | 0.039 | 14   | 58   | $14784 \times 14784 \times 1840$ | 1.61 TB  |
-  | F035Gn0014  | 0.056 | 16   | 57   | $6144 \times 6144 \times 768$    | 116 GB   |
-  | F050Gn0014  | 0.086 | 16   | 55   | $2048 \times 2048 \times 256$    | 4.3 GB   |
-  | F070Gn0014  | 0.124 | 12   | 56   | $2048 \times 2048 \times 256$    | 4.3 GB   |
-  | F100Gn0014  | 0.155 | 15   | 50   | $2048 \times 2048 \times 512$    | 8.6 GB   |
-  | F150Gn0014  | 0.257 | 15   | 54   | $1024 \times 1024 \times 512$    | 2.1 GB   |
-  | F200Gn0014  | 0.335 | 16   | 51   | $512 \times 512 \times 256$      | 268 MB   |
-  | F300Gn0014  | 0.449 | 15   | 27   | $512 \times 512 \times 512$      | 537 MB   |
-  | F400Gn0014  | 0.556 | 15   | 23   | $256 \times 256 \times 256$      | 67 MB    |
-  | F500Gn0014  | 0.713 | 14   | 21   | $128 \times 128 \times 128$      | 8.4 MB   |
-  | F025Gn0050  | 0.027 | 45   | 150  | $18432 \times 18432 \times 2304$ | 3.13 TB  |
-  | F050Gn0050  | 0.070 | 53   | 154  | $8192 \times 8192 \times 1024$   | 275 GB   |
-  | F100Gn0050  | 0.142 | 65   | 247  | $4096 \times 4096 \times 1024$   | 68.7 GB  |
-  | F200Gn0050  | 0.334 | 45   | 170  | $2048 \times 2048 \times 1024$   | 17.2 GB  |
-  | F400Gn0050  | 0.607 | 44   | 163  | $512 \times 512 \times 512$      | 537 MB   |
-  | F600Gn0050  | 0.870 | 51   | 101  | $256 \times 256 \times 256$      | 67 MB    |
-  | F800Gn0050  | 1.294 | 50   | 85   | $128 \times 128 \times 128$      | 8.4 MB   |
-  | F025Gn0200  | 0.041 | 207  | 1521 | $16384 \times 16384 \times 2048$ | 2.20 TB  |
-  | F050Gn0200  | 0.105 | 194  | 543  | $14784 \times 14784 \times 1848$ | 1.62 TB  |
-  | F100Gn0200  | 0.209 | 202  | 868  | $16384 \times 16384 \times 4096$ | 4.40 TB  |
-  | F200Gn0200  | 0.322 | 207  | 729  | $4096 \times 4096 \times 2048$   | 137 GB   |
-  | F400Gn0200  | 0.648 | 202  | 689  | $512 \times 512 \times 512$      | 537 MB   |
-  | F800Gn0200  | 1.438 | 197  | 521  | $512 \times 512 \times 512$      | 537 MB   |
-  | F1600Gn0200 | 2.578 | 206  | 443  | $256 \times 256 \times 256$      | 67 MB    |
-  | F025Gn1000  | 0.026 | 1278 | 3200 | $15840 \times 15840 \times 1980$ | 1.99 TB  |
-  | F100Gn1000  | 0.210 | 1185 | 2862 | $14784 \times 14784 \times 3696$ | 3.23 TB  |
-  | F200Gn1000  | 0.419 | 1368 | 5263 | $14784 \times 14784 \times 7392$ | 6.46 TB  |
-  | F400Gn1000  | 0.564 | 929  | 2957 | $3072 \times 3072 \times 3072$   | 116 GB   |
-  | F800Gn1000  | 2.078 | 1044 | 5878 | $1024 \times 1024 \times 1024$   | 4.3 GB   |
-  | F1600Gn1000 | 3.619 | 1066 | 5356 | $512 \times 512 \times 512$      | 537 MB   |
-
-  **$Pr = 7, 50$**
-
-  | Name | $Pr$ | $Fr_h$ | $Gn$ | $Re_b$ | Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) |
-  | ---- | ---- | ------ | ---- | ------ | ----------------------------- | ----------------------------------- |
-  | P7F050Gn0050  | 7  | 0.078 | 57 | 143 | $30240^2 \times 3780$ | 13.8 TB |
-  | P7F100Gn0050  | 7  | 0.156 | 54 | 136 | $8192^2 \times 2048$  | 550 GB  |
-  | P7F200Gn0050  | 7  | 0.289 | 64 | 185 | $6144^2 \times 3072$  | 464 GB  |
-  | P50F050Gn0050 | 50 | 0.073 | 54 | 145 | $37632^2 \times 4704$ | 26.6 TB |
-  | P50F100Gn0050 | 50 | 0.164 | 47 | 142 | $28672^2 \times 7168$ | 23.6 TB |
-  | P50F200Gn0050 | 50 | 0.315 | 66 | 158 | $8192^2 \times 4096$  | 1.1 TB  |
+  | Name | $Pr$ | $Fr_h$ | $Gn$ | Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) |
+  | ---- | ---- | ------ | ---- | ----------------------------- | ----------------------------------- |
+  | **Pr = 1** | | | | | |
+  | P1F025Gn0014  | 1  | 0.039 | 14   | $14784 \times 14784 \times 1840$ | 1.61 TB  |
+  | P1F035Gn0014  | 1  | 0.056 | 16   | $6144 \times 6144 \times 768$    | 116 GB   |
+  | P1F050Gn0014  | 1  | 0.086 | 16   | $2048 \times 2048 \times 256$    | 4.3 GB   |
+  | P1F070Gn0014  | 1  | 0.124 | 12   | $2048 \times 2048 \times 256$    | 4.3 GB   |
+  | P1F100Gn0014  | 1  | 0.155 | 15   | $2048 \times 2048 \times 512$    | 8.6 GB   |
+  | P1F150Gn0014  | 1  | 0.257 | 15   | $1024 \times 1024 \times 512$    | 2.1 GB   |
+  | P1F200Gn0014  | 1  | 0.335 | 16   | $512 \times 512 \times 256$      | 268 MB   |
+  | P1F300Gn0014  | 1  | 0.449 | 15   | $512 \times 512 \times 512$      | 537 MB   |
+  | P1F400Gn0014  | 1  | 0.556 | 15   | $256 \times 256 \times 256$      | 67 MB    |
+  | P1F500Gn0014  | 1  | 0.713 | 14   | $128 \times 128 \times 128$      | 8.4 MB   |
+  | P1F025Gn0050  | 1  | 0.027 | 45   | $18432 \times 18432 \times 2304$ | 3.13 TB  |
+  | P1F050Gn0050  | 1  | 0.070 | 53   | $8192 \times 8192 \times 1024$   | 275 GB   |
+  | P1F100Gn0050  | 1  | 0.142 | 65   | $4096 \times 4096 \times 1024$   | 68.7 GB  |
+  | P1F200Gn0050  | 1  | 0.334 | 45   | $2048 \times 2048 \times 1024$   | 17.2 GB  |
+  | P1F400Gn0050  | 1  | 0.607 | 44   | $512 \times 512 \times 512$      | 537 MB   |
+  | P1F600Gn0050  | 1  | 0.870 | 51   | $256 \times 256 \times 256$      | 67 MB    |
+  | P1F800Gn0050  | 1  | 1.294 | 50   | $128 \times 128 \times 128$      | 8.4 MB   |
+  | P1F025Gn0200  | 1  | 0.041 | 207  | $16384 \times 16384 \times 2048$ | 2.20 TB  |
+  | P1F050Gn0200  | 1  | 0.105 | 194  | $14784 \times 14784 \times 1848$ | 1.62 TB  |
+  | P1F100Gn0200  | 1  | 0.209 | 202  | $16384 \times 16384 \times 4096$ | 4.40 TB  |
+  | P1F200Gn0200  | 1  | 0.322 | 207  | $4096 \times 4096 \times 2048$   | 137 GB   |
+  | P1F400Gn0200  | 1  | 0.648 | 202  | $512 \times 512 \times 512$      | 537 MB   |
+  | P1F800Gn0200  | 1  | 1.438 | 197  | $512 \times 512 \times 512$      | 537 MB   |
+  | P1F1600Gn0200 | 1  | 2.578 | 206  | $256 \times 256 \times 256$      | 67 MB    |
+  | P1F025Gn1000  | 1  | 0.026 | 1278 | $15840 \times 15840 \times 1980$ | 1.99 TB  |
+  | P1F100Gn1000  | 1  | 0.210 | 1185 | $14784 \times 14784 \times 3696$ | 3.23 TB  |
+  | P1F200Gn1000  | 1  | 0.419 | 1368 | $14784 \times 14784 \times 7392$ | 6.46 TB  |
+  | P1F400Gn1000  | 1  | 0.564 | 929  | $3072 \times 3072 \times 3072$   | 116 GB   |
+  | P1F800Gn1000  | 1  | 2.078 | 1044 | $1024 \times 1024 \times 1024$   | 4.3 GB   |
+  | P1F1600Gn1000 | 1  | 3.619 | 1066 | $512 \times 512 \times 512$      | 537 MB   |
+  | | | | | |
+  | **Pr = 7** | | | | |
+  | P7F050Gn0050  | 7  | 0.078 | 57 | $30240^2 \times 3780$ | 13.8 TB |
+  | P7F100Gn0050  | 7  | 0.156 | 54 | $8192^2 \times 2048$  | 550 GB  |
+  | P7F200Gn0050  | 7  | 0.289 | 64 | $6144^2 \times 3072$  | 464 GB  |
+  | | | | | |
+  | **Pr = 50** | | | | |
+  | P50F050Gn0050 | 50 | 0.073 | 54 | $37632^2 \times 4704$ | 26.6 TB |
+  | P50F100Gn0050 | 50 | 0.164 | 47 | $28672^2 \times 7168$ | 23.6 TB |
+  | P50F200Gn0050 | 50 | 0.315 | 66 | $8192^2 \times 4096$  | 1.1 TB  |
 
   </div>
   </div>

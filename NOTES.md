@@ -111,3 +111,13 @@ WEBrick::HTTPUtils::DefaultMimeTypes.update('webm' => 'video/webm')
 
 This only affects `bundle exec jekyll serve` — it has no effect on the GitHub Pages build.
 
+### Hero video not looping on Safari
+
+The `loop` attribute on the `<video>` tag works on Chrome but not Safari. Attempted fixes that did NOT work:
+- JS fallback listening for `ended` and `pause` events, resetting `currentTime` and calling `play()`
+- Re-encoding with `ffmpeg -movflags +faststart` and using an H.264 MP4 as the Safari source (`startVis.mp4`)
+
+Current state: `loop` attribute only, `startVis.mp4` as the MP4 fallback (kept since it matches the webm content). Possible avenues still to try:
+- Use `<video>` as a CSS `background` or replace with an animated GIF/APNG
+- Investigate whether Safari is blocking autoplay/loop due to page visibility or power-saving policies
+

@@ -122,16 +122,19 @@ hidden: true
   <div class="hero-text">
     <h1 class="hero-title"><span>STRATA</span></h1>
     <p class="hero-subtitle">
-      Supercomputing for Stratified Turbulence Research Advancing Theory and Application
+      Supercomputing for <span style="color:#fe5f55">S</span>tratified <span style="color:#fe5f55">T</span>urbulence <span style="color:#fe5f55">R</span>esearch <span style="color:#fe5f55">A</span>dvancing <span style="color:#fe5f55">T</span>heory and <span style="color:#fe5f55">A</span>pplication
     </p>
      <p style="color: #999; font-style: italic; font-size: 0.85rem;">
-      Website is currently being updated...
+      Website is currently being updated, please check back often...
+     </p>
+     <p style="color: #999; font-style: italic; font-size: 0.85rem;">
+      Questions may be directed to <a href="https://www.yorku.ca/professor/couchman/" target="_blank">Miles Couchman</a> or <a href="https://www.umass.edu/engineering/about/directory/stephen-de-bruyn-kops" target="_blank">Steve de Bruyn Kops</a>
      </p>
   </div>
   <div class="hero-video-wrap">
     <video autoplay muted loop playsinline poster="{{ site.baseurl }}/images/TG.jpg">
       <source src="{{ site.baseurl }}/images/startVis.webm" type="video/webm">
-    <source src="{{ site.baseurl }}/images/TG.mp4" type="video/mp4">
+    <source src="{{ site.baseurl }}/images/startVis.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -143,17 +146,8 @@ hidden: true
     <img src="{{ site.baseurl }}/images/TG.jpg" alt="Datasets">
     <div class="feature-card-body">
       <h3>Datasets</h3>
-      <p>Petabyte-scale DNS database of stratified turbulence, spanning a broad range of forcing schemes and parameters.</p>
+      <!-- <p>Directory of publically-available data, spanning broad range of forcing schemes and parameters</p> -->
       <span class="feature-card-btn">Explore →</span>
-    </div>
-  </a>
-
-  <a href="{{ site.baseurl }}/Gallery/" class="feature-card">
-    <img src="{{ site.baseurl }}/images/sheared.jpg" alt="Gallery">
-    <div class="feature-card-body">
-      <h3>Gallery</h3>
-      <p>Visualizations and still images from various datasets.</p>
-      <span class="feature-card-btn">View →</span>
     </div>
   </a>
 
@@ -161,16 +155,25 @@ hidden: true
     <img src="{{ site.baseurl }}/images/Forced.jpg" alt="Publications">
     <div class="feature-card-body">
       <h3>Publications</h3>
-      <p>Journal articles and conference papers.</p>
+      <!-- <p>Journal articles and conference papers.</p> -->
       <span class="feature-card-btn">Read →</span>
+    </div>
+  </a>
+
+  <a href="{{ site.baseurl }}/Gallery/" class="feature-card">
+    <img src="{{ site.baseurl }}/images/sheared.jpg" alt="Gallery">
+    <div class="feature-card-body">
+      <h3>Gallery</h3>
+      <!-- <p>Example visualizations</p> -->
+      <span class="feature-card-btn">View →</span>
     </div>
   </a>
 
   <a href="{{ site.baseurl }}/Demos/" class="feature-card">
     <img src="{{ site.baseurl }}/images/DemoIm.png" alt="Demos">
     <div class="feature-card-body">
-      <h3>Demos</h3>
-      <p>Interactive demos and code for data exploration.</p>
+      <h3>Code+Demos</h3>
+      <!-- <p>Interactive demos and code for data exploration.</p> -->
       <span class="feature-card-btn">Try →</span>
     </div>
   </a>
@@ -179,11 +182,11 @@ hidden: true
 
 <!-- ── Main content ── -->
 
-## Current Research Themes
-The objective of this group is to generate and analyze fully-resolved direct numerical simulations of stratified turbulence, across a variety of flow configurations and parameters, in order to better understand fundamental turbulent processes influenced by buoyancy and their importance to geophysical, industrial, and environmental applications.
+## About
+The objective of this group is to generate and analyze fully-resolved direct numerical simulations of stratified turbulence, across a variety of flow configurations and parameters, in order to better understand fundamental turbulent processes influenced by buoyancy and their importance to geophysical, industrial, and environmental applications. Current research themes include:
 
-- Exascale computing to resolve stratified turbulent flows in previously-inaccessible regions of parameter space
-- Probing coupling between large and small-scale flow features to inform reduced-order modelling
+- Exascale computing using the Frontier supercomputer ([Oak Ridge National Laboratory](https://www.ornl.gov){:target="_blank"}) to resolve flow dynamics in previously-inaccessible regions of parameter space
+- Probing the coupling between large and small-scale flow structures to inform reduced-order modelling
 - Development of data-driven and machine-learning techniques to extract physical insight from petabyte-scale datasets
 
 <!-- ## Datasets
@@ -195,23 +198,22 @@ We are developing a [database of stratified turbulence simulations](https://stra
   - Buoyancy-Reynolds ($Re_b$), Froude ($Fr$), Prandtl ($Pr$), Richardson ($Ri$) numbers -->
 
 ## People
-This work is collaborative across multiple international institutions, including:
+This work is collaborative across multiple international research groups, including those of:
 
-* University of Massachusetts Amherst (US): [Steve de Bruyn Kops](https://www.umass.edu/engineering/about/directory/stephen-de-bruyn-kops)
-* Duke University (US): [Andrew Bragg](https://cee.duke.edu/people/andrew-bragg/)
-* Princeton University (US): [Paul Yi](https://tune.cee.princeton.edu/people/young-paul-yi/)
-* Oak Ridge National Laboratory (US): [Murali Gopalakrishnan Meena](https://www.ornl.gov/staff-profile/murali-gopalakrishnan-meena), [Wes Brewer](https://www.ornl.gov/staff-profile/wesley-h-brewer), [Aditya Kashi](https://www.ornl.gov/staff-profile/aditya-kashi), [Isaac Lyngass](https://www.ornl.gov/staff-profile/isaac-r-lyngaas), [Pei Zhang](https://www.ornl.gov/staff-profile/pei-zhang)
-* Imperial College London (UK): [Adrien Lefauve](https://www.alefauve.com/)
-* York University (Canada): [Miles Couchman](https://www.yorku.ca/professor/couchman/)
+* University of Massachusetts Amherst (US): [Steve de Bruyn Kops](https://www.umass.edu/engineering/about/directory/stephen-de-bruyn-kops){:target="_blank"}
+* Duke University (US): [Andrew Bragg](https://cee.duke.edu/people/andrew-bragg/){:target="_blank"}
+* Oak Ridge National Laboratory (US): [Murali Gopalakrishnan Meena](https://www.ornl.gov/staff-profile/murali-gopalakrishnan-meena){:target="_blank"}, [Wes Brewer](https://www.ornl.gov/staff-profile/wesley-h-brewer){:target="_blank"}, [Aditya Kashi](https://www.ornl.gov/staff-profile/aditya-kashi){:target="_blank"}, [Isaac Lyngass](https://www.ornl.gov/staff-profile/isaac-r-lyngaas){:target="_blank"}, [Pei Zhang](https://www.ornl.gov/staff-profile/pei-zhang){:target="_blank"}
+* Imperial College London (UK): [Adrien Lefauve](https://www.alefauve.com/){:target="_blank"}
+* York University (Canada): [Miles Couchman](https://www.yorku.ca/professor/couchman/){:target="_blank"}
 
 Groups interested in collaboration are encouraged to reach out.
 
 ## Funding
 
-We gratefully acknowledge support from:
-- [INCITE Leadership Computing Program](https://doeleadershipcomputing.org) (U.S. Department of Energy)
-- [High Performance Computing Modernization Program](https://www.hpc.mil/) (U.S. Department of Defense)
-- [Natural Sciences and Engineering Research Council of Canada](https://nserc-crsng.canada.ca/en)
+We gratefully acknowledge support from the:
+- [INCITE Leadership Computing Program](https://doeleadershipcomputing.org){:target="_blank"}
+- [High Performance Computing Modernization Program](https://www.hpc.mil/){:target="_blank"}
+- [Natural Sciences and Engineering Research Council of Canada](https://nserc-crsng.canada.ca/en){:target="_blank"}
 
 <div style="text-align: center; margin-top: 2rem;">
   <img src="/web/images/Logos.jpg" alt="Supporting institutions" style="width: 800px; max-width: 100%;">

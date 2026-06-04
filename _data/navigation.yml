@@ -18,7 +18,7 @@ main:
   - title: "Gallery"
     url: /Gallery/
 
-  - title: "Demos"
+  - title: "Code+Demos"
     url: /Demos/
 
   # - title: "Archive Layout with Content"

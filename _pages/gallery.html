@@ -59,7 +59,7 @@ author_profile: false
   }
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     gap: 1rem;
   }
   .gallery-thumb {
@@ -141,36 +141,37 @@ author_profile: false
 
   <nav class="gallery-sidenav">
     <span style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#aaa;margin-bottom:0.25rem;">Jump To</span>
-    <a href="#visualizations">Visualizations</a>
+    <a href="#visualizations">General visualizations</a>
     <a href="#taylor-green">Taylor-Green</a>
-    <a href="#passive-scalars">Passive Scalars</a>
+    <a href="#forced-no-shear">Forced no shear</a>
+    <a href="#passive-scalars">Passive scalars</a>
   </nav>
 
   <div class="gallery-main">
 
     <!-- ===================== Visualizations ===================== -->
     <div class="project-section" id="visualizations">
-      <h2>Visualizations</h2>
+      <h2>General visualizations</h2>
       <div class="gallery-grid">
 
-        <a href="https://www.youtube.com/watch?v=uRvasupvYDU"
+        <a href="https://www.youtube.com/watch?v=uRvasupvYDU" target="_blank"
            class="glightbox gallery-thumb"
            data-gallery="videos"
-           data-title="Video title"
-           data-description="Description of this video.">
+           data-title="Stratified Turbulence: A Journey Across Scales"
+           data-description="Data Visualization for 2025 Oak Ridge Leadership Computing Facility (OLCF) User Meeting. <br> Dataset: Forced no shear (P50F050Gn0050)">
           <img src="https://img.youtube.com/vi/uRvasupvYDU/maxresdefault.jpg" alt="YouTube video">
           <div class="play-icon">&#9654;</div>
-          <div class="thumb-label">Video title</div>
+          <div class="thumb-label">Stratified Turbulence: A Journey Across Scales</div>
         </a>
 
-        <a href="https://youtu.be/5VtAg4hfZ5A"
+        <a href="https://youtu.be/5VtAg4hfZ5A" target="_blank"
            class="glightbox gallery-thumb"
            data-gallery="videos"
-           data-title="Video title"
-           data-description="Description of this video.">
+           data-title="Geophysical Stratified Turbulence at Exascale"
+           data-description="Data Visualization for 2026 Oak Ridge Leadership Computing Facility (OLCF) User Meeting. <br> Dataset: Forced vertical shear">
           <img src="https://img.youtube.com/vi/5VtAg4hfZ5A/maxresdefault.jpg" alt="YouTube video">
           <div class="play-icon">&#9654;</div>
-          <div class="thumb-label">Video title</div>
+          <div class="thumb-label">Geophysical Stratified Turbulence at Exascale</div>
         </a>
 
       </div>
@@ -179,44 +180,40 @@ author_profile: false
     <!-- ===================== Taylor-green ===================== -->
     <div class="project-section" id="taylor-green">
       <h2>Taylor-green</h2>
-      <p class="gallery-desc">
-        Evolution of the vertical derivative of density perturbations \(\rho'_z\), scaled by the background
-        density gradient \(|\bar{\rho}_z|\), compared across simulations at \(Pr = [1, 7, 50]\). As \(Pr\)
-        increases, progressively finer detail is visible in the density field.
-      </p>
+    
       <div class="gallery-grid">
 
         <a href="{{ site.baseurl }}/images/TG.webm"
            class="glightbox gallery-thumb"
            data-type="video"
            data-gallery="tg"
-           data-title="Taylor-Green Vortex — time evolution at Pr = [1, 7, 50]"
-           data-description="Time evolution of the vertical density derivative across Prandtl numbers Pr = [1, 7, 50]. <a href='{{ site.baseurl }}/portfolio/taylorgreen/'>More info →</a>">
-          <video src="{{ site.baseurl }}/images/TG.webm" poster="{{ site.baseurl }}/images/poster_TG.jpg" preload="none" muted playsinline></video>
+           data-title="Evolution of Taylor-Green vortices at Pr = [1, 7, 50]"
+           data-description=" Evolution of the vertical derivative of density perturbations \(\rho'_z\), scaled by the background
+        density gradient \(|\bar{\rho}_z|\), compared across simulations at \(Pr = [1, 7, 50]\). As \(Pr\)
+        increases, progressively finer detail is visible in the density field. <a href='{{ site.baseurl }}/portfolio/taylorgreen/'>More info →</a>">
+          <video src="{{ site.baseurl }}/images/TG.webm" poster="{{ site.baseurl }}/images/TG_Thumb.png" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
-          <div class="thumb-label">Time evolution — Pr = [1, 7, 50]</div>
+          <div class="thumb-label">Evolution of Taylor-Green vortices at Pr = [1, 7, 50]</div>
         </a>
 
       </div>
     </div>
 
-     <!-- ===================== Forced ===================== -->
-    <div class="project-section" id="forced">
-      <h2>Forced</h2>
-      <p class="gallery-desc">
-        Text
-      </p>
+     <!-- ===================== Forced no shear ===================== -->
+    <div class="project-section" id="forced-no-shear">
+      <h2>Forced no shear</h2>
+
       <div class="gallery-grid">
 
         <a href="{{ site.baseurl }}/images/6panel_zsweep_ds8_sigma150_k5.webm"
            class="glightbox gallery-thumb"
            data-type="video"
            data-gallery="forced"
-           data-title="Forced"
-           data-description="Text">
+           data-title="Visualization of forced no shear dataset (P1F200Gn0050)"
+           data-description="Visualized are a) the turbulent density field, b) the vertical derivative of density, c) filtered fraction of overturned regions, d) clustering of the field in c, e) the dissipation rate of kinetic energy and f) the dissipation rate of scalar variance." >
           <video src="{{ site.baseurl }}/images/6panel_zsweep_ds8_sigma150_k5.webm" poster="{{ site.baseurl }}/images/poster_6panel.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
-          <div class="thumb-label">Time evolution — Pr = [1, 7, 50]</div>
+          <div class="thumb-label">Visualization of forced no shear dataset (P1F200Gn0050)</div>
         </a>
 
       </div>
@@ -226,12 +223,10 @@ author_profile: false
     <div class="project-section" id="passive-scalars">
       <h2>Passive Scalars in Stratified Turbulence</h2>
 
+
       <h3 class="gallery-subsection">1 — Scalar mixing layers in decaying homogeneous turbulence</h3>
       <p class="gallery-desc">
-        Based on case III in de Bruyn Kops and Riley (2019). The flow is initially homogeneous and isotropic
-        in power-law decay. At dimensionless time \(t^* = 1\), the density field is initialized with a uniform
-        gradient in \(z\) and stratified turbulence develops. Three passive scalar fields are imposed: two scalar
-        mixing layers varying in \(y\) and \(z\) respectively, and a narrow plume in \(x\).
+        This simulation is based on case III in de Bruyn Kops and Riley [2019]. The flow is initially homogeneous and isotropic in power-law decay. At dimensionless time \( t^* = 1 \), the density field is initialized to be a uniform gradient in the \(z\)-direction and stratified turbulence develops. Also at \( t^* = 1 \), three passive scalar fields are imposed. Two are scalar mixing layers that vary in the \(x\) and \(y\) directions, respectively, and the third is a narrow plume in the \(z\) direction. Movies of the passive scalars follow.
       </p>
       <div class="gallery-grid">
 
@@ -239,44 +234,40 @@ author_profile: false
            class="glightbox gallery-thumb"
            data-type="video"
            data-gallery="passive-decay"
-           data-title="Evolution of ξ₁"
-           data-description="Initialized with periodic scalar mixing layers in the z-direction.">
+           data-title="Evolution of ξ₁, which is initialized with periodic scalar mixing layers in the z-direction."
+           data-description="Evolution of ξ₁, which is initialized with periodic scalar mixing layers in the z-direction.">
           <video src="{{ site.baseurl }}/images/z0_fps5.webm" poster="{{ site.baseurl }}/images/poster_z0.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
-          <div class="thumb-label">ξ₁ — mixing layer (z)</div>
+          <div class="thumb-label">Evolution of ξ₁</div>
         </a>
 
         <a href="{{ site.baseurl }}/images/z1_fps5.webm"
            class="glightbox gallery-thumb"
            data-type="video"
            data-gallery="passive-decay"
-           data-title="Evolution of ξ₂"
-           data-description="Initialized with periodic scalar mixing layers in the x-direction.">
+           data-title="Evolution of ξ₂, which is initialized with periodic scalar mixing layers in the x-direction."
+           data-description="Evolution of ξ₂, which is initialized with periodic scalar mixing layers in the x-direction.">
           <video src="{{ site.baseurl }}/images/z1_fps5.webm" poster="{{ site.baseurl }}/images/poster_z1.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
-          <div class="thumb-label">ξ₂ — mixing layer (x)</div>
+          <div class="thumb-label">Evolution of ξ₂</div>
         </a>
 
         <a href="{{ site.baseurl }}/images/z2_fps5.webm"
            class="glightbox gallery-thumb"
            data-type="video"
            data-gallery="passive-decay"
-           data-title="Evolution of ξ₃"
-           data-description="Initialized with a small plume in the y-direction. Only a portion of the domain is shown.">
+           data-title="Evolution of ξ₃, which is initialized with a small plume in the y-direction."
+           data-description="Evolution of ξ₃, which is initialized with a small plume in the y-direction.">
           <video src="{{ site.baseurl }}/images/z2_fps5.webm" poster="{{ site.baseurl }}/images/poster_z2.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
-          <div class="thumb-label">ξ₃ — plume (y)</div>
+          <div class="thumb-label">Evolution of ξ₃</div>
         </a>
 
       </div>
 
       <h3 class="gallery-subsection">2 — Passive scalar in stationary homogeneous sheared stratified turbulence</h3>
       <p class="gallery-desc">
-        Based on case R1 in Portwood et al. (2022). Shear and gravity are tuned so that the flow is
-        quasi-stationary. The active scalar has \(Pr = 7\) and the passive scalar has \(Pr = 50\), both with
-        the same stationary mean gradient. The passive scalar starts identical to the density; finer scales
-        develop as time advances. Top panel shows the full \(xz\) slice; lower panels show passive scalar
-        and density in a subdomain at full resolution.
+        This simulation is based on case R1 in Portwood et al. [2022]. The is shear and gravity is tuned so that the flow is quasi-stationary. In the current case, the active scalar has Prandtl number \( Pr=7\)  and the passive scalar has \(Pr=50\). Both have the same stationary mean gradient. When the simulation starts, the velocity and density fields are in quasi-equilibrium and the passive scalar is identical to the density. At time advances, the smaller scales develop in the passive scalar. Movies of the density and passive scalar follows. The top panel shows the full \( xz\) slice of the scalar and the lower panels show the passive scalar and the density in a subset of the domain at full resolution.
       </p>
       <div class="gallery-grid">
 
@@ -284,20 +275,18 @@ author_profile: false
            class="glightbox gallery-thumb"
            data-type="video"
            data-gallery="passive-shear"
-           data-title="Density and passive scalar — sheared stratified turbulence"
-           data-description="Active scalar Pr = 7, passive scalar Pr = 50. Based on case R1 (Portwood et al., 2022).">
+           data-title="Density and passive scalar in stationary homogeneous sheared stratified turbulence."
+           data-description="Density and passive scalar in stationary homogeneous sheared stratified turbulence..">
           <video src="{{ site.baseurl }}/images/R1P7-50_fps5.webm" poster="{{ site.baseurl }}/images/poster_R1P7-50.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
-          <div class="thumb-label">Density &amp; passive scalar</div>
+          <div class="thumb-label">Density and passive scalar in stationary homogeneous sheared stratified turbulence.</div>
         </a>
 
       </div>
 
       <h3 class="gallery-subsection">3 — Passive plumes in stationary homogeneous sheared stratified turbulence</h3>
       <p class="gallery-desc">
-        Based on case R1 in Portwood et al. (2022). Active scalar \(Pr = 7\), passive plumes \(Pr = 50\).
-        Top panels show full \(xy\), \(xz\), and \(yz\) slices of the plumes; lower panels show a subdomain
-        with locations outlined in white in the top panels.
+        This simulation is based on case R1 in Portwood et al. [2022]. The is shear and gravity is tuned so that the flow is quasi-stationary. In the current case, the active scalar has Prandtl number \( Pr=7 \) and passive scalar plumes have \( Pr=50 \). The top panels shows the full \( xy \), \( xz \), and \( yz \) slices of the plumes, and the lower panels show subdomain. The location of the subdomains are outlined in white in the top panels.
       </p>
       <div class="gallery-grid">
 
@@ -305,8 +294,8 @@ author_profile: false
            class="glightbox gallery-thumb"
            data-type="video"
            data-gallery="passive-plumes"
-           data-title="Streamwise plume — sheared stratified turbulence"
-           data-description="Passive plume Pr = 50 in quasi-stationary sheared stratified turbulence. Based on case R1 (Portwood et al., 2022).">
+           data-title="Streamwise plume in stationary homogeneous sheared stratified turbulence."
+           data-description="Streamwise plume in stationary homogeneous sheared stratified turbulence.">
           <video src="{{ site.baseurl }}/images/R1P7-50_Z1_fps5.webm" poster="{{ site.baseurl }}/images/poster_R1P7-50_Z1.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
           <div class="thumb-label">Streamwise plume</div>
@@ -316,8 +305,8 @@ author_profile: false
            class="glightbox gallery-thumb"
            data-type="video"
            data-gallery="passive-plumes"
-           data-title="Cross-stream plume — sheared stratified turbulence"
-           data-description="Passive plume Pr = 50 in quasi-stationary sheared stratified turbulence. Based on case R1 (Portwood et al., 2022).">
+           data-title="Cross-stream plume in stationary homogeneous sheared stratified turbulence."
+           data-description="Cross-stream plume in stationary homogeneous sheared stratified turbulence.">
           <video src="{{ site.baseurl }}/images/R1P7-50_Z2_fps5.webm" poster="{{ site.baseurl }}/images/poster_R1P7-50_Z2.jpg" preload="none" muted playsinline></video>
           <div class="play-icon">&#9654;</div>
           <div class="thumb-label">Cross-stream plume</div>
@@ -331,7 +320,14 @@ author_profile: false
 
 <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
 <script>
-  GLightbox({ touchNavigation: true, loop: false, descPosition: 'bottom' });
+  GLightbox({
+    touchNavigation: true,
+    loop: false,
+    descPosition: 'bottom',
+    onOpen: () => {
+      if (window.MathJax) MathJax.typesetPromise().catch(err => console.log(err));
+    }
+  });
 
   // Highlight active section in sidebar as user scrolls
   const sections = document.querySelectorAll('.project-section');
