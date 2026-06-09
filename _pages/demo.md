@@ -81,8 +81,17 @@ This interactive demo runs entirely in Google Colab, no local installation is re
   </a>
 </div>
 
+## 2. Interactive field visualization with clustering and overlays
 
-## 2. Useful repositories for local analysis
+Explore flow segmentation based on the local prevalence of density overturning, following Portwood et al, JFM, 2016. Select different clustering parameters, slice through 3D fields (density, dissipation of kinetic energy, scalar variance), and overlay clustering boundaries. All computations happens in Colab, no local setup required.
+
+<div class="demo-colab-btn">
+  <a href="https://colab.research.google.com/github/stratified-turbulence/web/blob/master/voila_viewer_v2_colab.ipynb" target="_blank">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open demo in Colab" style="height: 32px;">
+  </a>
+</div>
+
+## 3. Useful repositories for local analysis
 If downloading data to a local machine, the following respositories provide useful Python scripts for loading and analysis
 <div class="gh-repo-card">
   <a href="https://github.com/muralikrishnangm/getData-SST" target="_blank">
