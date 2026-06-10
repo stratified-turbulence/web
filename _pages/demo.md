@@ -86,7 +86,7 @@ This interactive demo runs entirely in Google Colab, no local installation is re
 Explore flow segmentation based on the local prevalence of density overturning, following Portwood et al, JFM, 2016. Select different clustering parameters, slice through 3D fields (density, dissipation of kinetic energy, scalar variance), and overlay clustering boundaries. All computations happens in Colab, no local setup required.
 
 <div class="demo-colab-btn">
-  <a href="https://colab.research.google.com/github/stratified-turbulence/web/blob/master/voila_viewer_v2_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/stratified-turbulence/web/blob/master/voila_viewer_v3_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open demo in Colab" style="height: 32px;">
   </a>
 </div>
