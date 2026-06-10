@@ -65,6 +65,51 @@ author_profile: false
     margin-top: 0.2rem;
     display: block;
   }
+  .demo-launch-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0 2rem 0;
+    padding: 0.7rem 1.4rem;
+    background: linear-gradient(135deg, #0969da, #fe5f55);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .demo-launch-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    text-decoration: none;
+    color: #fff;
+  }
+  .demo-iframe-wrap {
+    width: 100%;
+    height: 640px;
+    margin: 1rem 0 0.5rem 0;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .demo-iframe-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  .demo-fullscreen {
+    text-align: right;
+    margin: 0 0 2rem 0;
+  }
+  .demo-fullscreen a {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0969da;
+    text-decoration: none;
+  }
+  .demo-fullscreen a:hover { text-decoration: underline; }
 </style>
 
 <div class="demo-prereq">
@@ -91,7 +136,18 @@ Explore flow segmentation based on the local prevalence of density overturning, 
   </a>
 </div>
 
-## 3. Useful repositories for local analysis
+## 3. Browser visualization
+
+Explore stratified turbulence driven by mean shear using the visualization tool (developed by Adrien Lefauve, Imperial) below.
+
+<div class="demo-iframe-wrap">
+  <iframe src="https://pub-ae06ec6e266444d2a93dba965f4447b2.r2.dev/site/index.html" title="STRATA interactive viewer" loading="lazy" allowfullscreen></iframe>
+</div>
+<div class="demo-fullscreen">
+  <a href="https://pub-ae06ec6e266444d2a93dba965f4447b2.r2.dev/site/index.html" target="_blank" rel="noopener">⛶ Open full screen ↗</a>
+</div>
+
+## 4. Useful repositories for local analysis
 If downloading data to a local machine, the following respositories provide useful Python scripts for loading and analysis
 <div class="gh-repo-card">
   <a href="https://github.com/muralikrishnangm/getData-SST" target="_blank">
@@ -99,6 +155,15 @@ If downloading data to a local machine, the following respositories provide usef
     <div class="gh-repo-card-text">
       <span class="gh-repo-name">getData-SST</span>
       <span class="gh-repo-desc">Python scripts for extracting subdomains and visualizing snapshots from the STRATA database</span>
+    </div>
+  </a>
+</div>
+<div class="gh-repo-card">
+  <a href="https://github.com/adrienlefauve/STRATA-shear" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+    <div class="gh-repo-card-text">
+      <span class="gh-repo-name">STRATA-shear</span>
+      <span class="gh-repo-desc">Python tools for analyzing stratified turbulence driven by vertical shear from STRATA database</span>
     </div>
   </a>
 </div>
