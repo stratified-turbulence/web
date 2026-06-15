@@ -132,7 +132,7 @@ hidden: true
      </p>
   </div>
   <div class="hero-video-wrap">
-    <video autoplay muted loop playsinline poster="{{ site.baseurl }}/images/TG.jpg">
+    <video autoplay muted loop playsinline poster="{{ site.baseurl }}/images/startVis_poster.jpg">
       <source src="{{ site.baseurl }}/images/startVis.webm" type="video/webm">
     <source src="{{ site.baseurl }}/images/startVis.mp4" type="video/mp4">
     </video>
