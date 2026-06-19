@@ -8,5 +8,5 @@ journal: Journal of Turbulence
 volume: 24
 year: 2023
 image: /web/images/publications/2023_Riley_JoT.jpg
-dataset: Taylor-green
+dataset: Decaying
 ---

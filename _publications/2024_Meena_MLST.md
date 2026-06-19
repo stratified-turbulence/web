@@ -8,5 +8,4 @@ journal: Machine Learning Science and Technology
 volume: 5 (4), 045063
 year: 2024
 image: /web/images/publications/2024_Meena_MLST.png
-dataset: Forced vertical shear
 ---
