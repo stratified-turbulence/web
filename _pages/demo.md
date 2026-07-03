@@ -136,6 +136,7 @@ Explore flow segmentation based on the local prevalence of density overturning, 
   </a>
 </div>
 
+
 ## 3. Browser visualization
 
 Explore stratified turbulence driven by mean shear using the visualization tool (developed by Adrien Lefauve, Imperial) below.
