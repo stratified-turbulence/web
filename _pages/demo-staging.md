@@ -14,6 +14,6 @@ sitemap: false
 
 ## Demo (staging)
 
-<a href="https://colab.research.google.com/github/stratified-turbulence/web/blob/master/zarrdemo_colab.ipynb" target="_blank">
+<a href="https://colab.research.google.com/github/stratified-turbulence/web/blob/master/zarrdemo_colab_v2.ipynb" target="_blank">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open demo in Colab" style="height: 32px; margin: 1rem 0 2rem 0; display:block;">
 </a>
