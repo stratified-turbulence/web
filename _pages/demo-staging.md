@@ -12,8 +12,16 @@ sitemap: false
   <strong>Staging page</strong> — not linked publicly. Replace the Colab URL below before promoting to the main Demos page.
 </div>
 
-## Demo (staging)
+## Zarr demo (try this one)
 
 <a href="https://colab.research.google.com/github/stratified-turbulence/web/blob/master/zarrdemo_colab_v2.ipynb" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open demo in Colab" style="height: 32px; margin: 1rem 0 2rem 0; display:block;">
+</a>
+
+
+
+
+## Testing (don't use!)
+<a href="https://colab.research.google.com/github/stratified-turbulence/web/blob/master/zarrdemo_colab_v3.ipynb" target="_blank">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open demo in Colab" style="height: 32px; margin: 1rem 0 2rem 0; display:block;">
 </a>
