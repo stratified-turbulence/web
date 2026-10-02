@@ -116,7 +116,15 @@ author_profile: false
    To access data on Constellation, a free <a href="https://www.globus.org/" target="_blank">Globus account</a> is required. You can sign up with an existing Google or institutional account.
 </div>
 
-## 1. (Quick start) Download and interactively visualize a snapshot in time
+
+## 1. Interactive viewer and download portal for sheared, stratified turbulence
+
+Explore fifteen datasets of stratified turbulence forced by vertical shear, as further detailed at <a href="https://doi.ccs.ornl.gov/dataset/d6fa913a-184d-5aef-a81a-b7cfc47f5112" target="_blank" style="color: #007acc; font-weight: bold;">doi.org/10.13139/OLCF/3409014</a>
+
+<p><a href="https://strata-turbulence.ca/shear/" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer and download portal →</a></p>
+
+
+## 2. (Google Colab) Download and interactively visualize a snapshot in time
 
 This interactive demo runs entirely in Google Colab, no local installation is required. It walks you through authenticating with Globus, downloading one snapshot from the [SST-TG-P1F4R3200](https://doi.ccs.ornl.gov/dataset/5be73ed1-f138-504e-9851-4dff0f465a1d) dataset archived on Constellation (Taylor-Green: Pr = 1, Fr = 4, Re = 3200), and visualizing the downloaded files using Matplotlib in a Jupyter notebook.
 
@@ -126,7 +134,7 @@ This interactive demo runs entirely in Google Colab, no local installation is re
   </a>
 </div>
 
-## 2. Interactive field visualization with clustering and overlays
+## 3. (Google Colab) Interactive field visualization with clustering and overlays
 
 Explore flow segmentation based on the local prevalence of density overturning, following Portwood et al, JFM, 2016. Select different clustering parameters, slice through 3D fields (density, dissipation of kinetic energy, scalar variance), and overlay clustering boundaries. All computations happens in Colab, no local setup required.
 
@@ -137,7 +145,7 @@ Explore flow segmentation based on the local prevalence of density overturning, 
 </div>
 
 
-## 3. Browser visualization
+## 4. Browser visualization
 
 Explore stratified turbulence driven by mean shear using the visualization tool (developed by Adrien Lefauve, Imperial) below.
 
@@ -148,7 +156,7 @@ Explore stratified turbulence driven by mean shear using the visualization tool 
   <a href="https://pub-ae06ec6e266444d2a93dba965f4447b2.r2.dev/site/index.html" target="_blank" rel="noopener">⛶ Open full screen ↗</a>
 </div>
 
-## 4. Useful repositories for local analysis
+## 5. Useful repositories for local analysis
 If downloading data to a local machine, the following respositories provide useful Python scripts for loading and analysis
 <div class="gh-repo-card">
   <a href="https://github.com/muralikrishnangm/getData-SST" target="_blank">

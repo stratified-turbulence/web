@@ -50,6 +50,27 @@ hidden: true
   @media (max-width: 650px) {
     .hero { flex-direction: column; }
   }
+  .hero-stat {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid #fe5f55;
+    border-radius: 6px;
+    color: #222 !important;
+    text-decoration: none !important;
+    font-size: 0.95rem;
+    transition: background 0.2s, color 0.2s;
+  }
+  .hero-stat strong {
+    color: #fe5f55;
+    font-size: 1.4rem;
+    margin: 0 0.2rem;
+  }
+  .hero-stat:hover {
+    background: #fe5f55;
+    color: #fff !important;
+  }
+  .hero-stat:hover strong { color: #fff; }
 
   /* ── Feature cards ── */
   .feature-cards {
@@ -130,6 +151,7 @@ hidden: true
      <p style="color: #999; font-style: italic; font-size: 0.85rem;">
       Questions may be directed to <a href="https://www.yorku.ca/professor/couchman/" target="_blank">Miles Couchman</a> or <a href="https://www.umass.edu/engineering/about/directory/stephen-de-bruyn-kops" target="_blank">Steve de Bruyn Kops</a>
      </p>
+     <a href="{{ site.baseurl }}/Datasets/" class="hero-stat">Explore <strong>1,019 TB</strong> of available data →</a>
   </div>
   <div class="hero-video-wrap">
     <video autoplay muted loop playsinline poster="{{ site.baseurl }}/images/startVis_poster.jpg">

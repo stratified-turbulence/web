@@ -61,8 +61,8 @@ author_profile: false
 <div class="datasets-wrapper">
 <nav class="datasets-sidenav">
   <span class="nav-label">Jump To</span>
-  <a href="#taylor-green">Taylor-green</a>
   <a href="#forced-shear">Forced vertical shear</a>
+  <a href="#taylor-green">Taylor-green</a>
   <a href="#forced-noshear">Forced no shear</a>
   <a href="#decaying">Decaying</a>
 </nav>
@@ -70,7 +70,9 @@ author_profile: false
 
 # Datasets
 
-Datasets, and associated analysis tools and demos, will progressively be added to the tables below. Data are hosted on the <a href="https://doi.ccs.ornl.gov/" target="_blank">Constellation repository</a> and may be downloaded to a local computer using <a href="https://www.globus.org/" target="_blank">Globus</a>. If you are interesting in exploring datasets not currently archived on Constellation, please contact the group. 
+<p style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc;"><strong>1,019 TB</strong> of data currently available.</p>
+
+Datasets, and associated analysis tools and demos, will progressively be added to the tables below. Data are hosted on the <a href="https://doi.ccs.ornl.gov/" target="_blank">Constellation repository</a> and may be downloaded to a local computer using <a href="https://www.globus.org/" target="_blank">Globus</a> or the provided <a href="https://strata-turbulence.ca/" target="_blank">interactive dashboard</a> (under continued development). If you are interesting in exploring datasets not currently archived on Constellation, please contact the group. 
 
 General details about the simulations are provided within the collapsible headings below.
 
@@ -243,7 +245,10 @@ Files are stored on the [Constellation repository](https://doi.ccs.ornl.gov/), w
 The numerical precision (single or double) of the saved data is specified, and varies between datasets. To easily detect errors in reading and reshaping the raw data, two zeros are padded onto the end of the $x$-dimension. The datafiles thus have size $\left(N_{x}+2\right)\times N_{y}\times N_{z}$. Python code is provided to read and save a given binary file as a three-dimensional array (e.g. as a NumPy array). For the larger datasets, it is advisable to use a memory map to avoid overloading your local RAM.  -->
 
 
-## Types of flows {#datasets}
+<details id="datasets">
+<summary class="big-summary"><strong>Types of flows</strong></summary>
+
+<div markdown="1">
 
 DNS runs may be broadly categorized as follows, with further details and download links (if available) provided in the following tables:
 
@@ -261,7 +266,61 @@ DNS runs may be broadly categorized as follows, with further details and downloa
     - **D. Taylor-green vortices:** Turbulence triggered by initially laminar field of Taylor-green vortices, develops, and then decays back to laminar state.
         - Methodology: <a href="https://doi.org/10.1063/1.1578077" target="_blank">Riley and de Bruyn Kops, *PoF*, 2003</a> 
 
+</div>
+</details>
 
+
+
+
+
+<div id="forced-shear" class="dataset-card" style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
+  <!-- Two-column section -->
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 2em;">
+    <div style="flex: 1;">
+      <h2 style="margin-top: 0;">Forced vertical shear</h2>
+<div markdown="1">
+- Fifteen datasets spanning three $Pr=\nu/\kappa=\left[1,7,50\right]$ and five buoyancy Reynolds numbers $(Re_b)=[30,1000]$
+- Fixed Richardson number $Ri\approx 0.15$
+
+</div>
+      <!-- <p> Three datasets spanning Prandtl numbers $Pr={1,7,50}$ with fixed Froude $Fr=4/(2 \pi) \approx 0.64$ and Reynolds $Re=3200$ numbers.</p>
+      <p><a href="/web/portfolio/taylorgreen/" style="color: #007acc; font-weight: bold;">Video and further details →</a></p> -->
+    </div>
+    <div style="flex: 1;">
+      <img src="/web/images/sheared.jpg" alt="Taylor-green" style="width: 100%; border: none;">
+    </div>
+  </div>
+
+  <!-- Full-width section -->
+  <div style="margin-top: 2em;">
+
+  <div markdown="1">
+
+
+
+  <p><a href="https://strata-turbulence.ca/shear/" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer and download portal →</a></p>
+
+  <p><a href="https://doi.ccs.ornl.gov/dataset/d6fa913a-184d-5aef-a81a-b7cfc47f5112" target="_blank" style="color: #007acc; font-weight: bold;">doi.org/10.13139/OLCF/3409014 →</a></p>
+
+  | Name | $Pr$ |  $Gn$ | Grid points $(N_x, N_y, N_z)$ | Field size (per variable, snapshot) |
+  | --------           | ------ | ------|        |
+  | R1P1    | 1   | 34.7  | $1536 \times 768 \times 384$      | 1.7 GB   |
+  | R1P7    | 7   | 34.0  | $3072 \times 1536 \times 768$     | 13 GB    |
+  | R1P50   | 50  | 35.7  | $8000 \times 4000 \times 2000$    | 233 GB   |
+  | R4P1    | 1   | 81.3  | $2048 \times 1024 \times 512$     | 3.8 GB   |
+  | R4P7    | 7   | 83.1  | $5120 \times 2560 \times 1280$    | 62 GB    |
+  | R4P50   | 50  | 84.0  | $16000 \times 8000 \times 4000$   | 1.87 TB  |
+  | R6P1    | 1   | 213   | $3072 \times 1536 \times 768$     | 13 GB    |
+  | R6P7    | 7   | 202   | $12288 \times 6144 \times 3072$   | 0.85 TB  |
+  | R6P50   | 50  | 217   | $24000 \times 12000 \times 6000$  | 6.2 TB   |
+  | R8P1    | 1   | 516   | $8736 \times 4368 \times 2184$    | 0.30 TB  |
+  | R8P7    | 7   | 525   | $23040 \times 11520 \times 5760$  | 5.5 TB   |
+  | R10P1   | 1   | 1026  | $12288 \times 6144 \times 3072$   | 0.85 TB  |
+  | R10P7   | 7   | 813   | $31680 \times 15840 \times 7920$  | 14.5 TB  |
+
+  </div>
+  </div>
+</div>
 
 
 
@@ -302,53 +361,6 @@ DNS runs may be broadly categorized as follows, with further details and downloa
   </div>
 </div>
 
-
-
-
-<div id="forced-shear" class="dataset-card" style="border: 2px solid #ccc; padding: 1.5em; border-radius: 12px; margin: 3em 0;">
-  <!-- Two-column section -->
-  <div style="display: flex; align-items: center; justify-content: space-between; gap: 2em;">
-    <div style="flex: 1;">
-      <h2 style="margin-top: 0;">Forced vertical shear</h2>
-<div markdown="1">
-- Fifteen datasets spannin three $Pr=\nu/\kappa=\left[1,7,50\right]$ and five buoyancy Reynolds numbers $(Re_b)=[30,1000]$
-- Fixed Richardson number $Ri\approx 0.15$
-
-</div>
-      <!-- <p> Three datasets spanning Prandtl numbers $Pr={1,7,50}$ with fixed Froude $Fr=4/(2 \pi) \approx 0.64$ and Reynolds $Re=3200$ numbers.</p>
-      <p><a href="/web/portfolio/taylorgreen/" style="color: #007acc; font-weight: bold;">Video and further details →</a></p> -->
-    </div>
-    <div style="flex: 1;">
-      <img src="/web/images/sheared.jpg" alt="Taylor-green" style="width: 100%; border: none;">
-    </div>
-  </div>
-
-  <!-- Full-width section -->
-  <div style="margin-top: 2em;">
-
-  <div markdown="1">
-
-  Data upload expected to be complete by August 2026.
-
-  | Name and dataset link | $Pr$ |  $Gn$ | Grid points $(N_x, N_y, N_z)$ | Field size (per variable, snapshot) |
-  | --------           | ------ | ------|        |
-  | R1P1    | 1   | 34.7  | $1536 \times 768 \times 384$      | 1.7 GB   |
-  | R1P7    | 7   | 34.0  | $3072 \times 1536 \times 768$     | 13 GB    |
-  | R1P50   | 50  | 35.7  | $8000 \times 4000 \times 2000$    | 233 GB   |
-  | R4P1    | 1   | 81.3  | $2048 \times 1024 \times 512$     | 3.8 GB   |
-  | R4P7    | 7   | 83.1  | $5120 \times 2560 \times 1280$    | 62 GB    |
-  | R4P50   | 50  | 84.0  | $16000 \times 8000 \times 4000$   | 1.87 TB  |
-  | R6P1    | 1   | 213   | $3072 \times 1536 \times 768$     | 13 GB    |
-  | R6P7    | 7   | 202   | $12288 \times 6144 \times 3072$   | 0.85 TB  |
-  | R6P50   | 50  | 217   | $24000 \times 12000 \times 6000$  | 6.2 TB   |
-  | R8P1    | 1   | 516   | $8736 \times 4368 \times 2184$    | 0.30 TB  |
-  | R8P7    | 7   | 525   | $23040 \times 11520 \times 5760$  | 5.5 TB   |
-  | R10P1   | 1   | 1026  | $12288 \times 6144 \times 3072$   | 0.85 TB  |
-  | R10P7   | 7   | 813   | $31680 \times 15840 \times 7920$  | 14.5 TB  |
-
-  </div>
-  </div>
-</div>
 
 
 
