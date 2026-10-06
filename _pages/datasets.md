@@ -70,9 +70,11 @@ author_profile: false
 
 # Datasets
 
-<p style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc;"><strong>1,019 TB</strong> of data currently available.</p>
+<p><a href="https://strata-turbulence.ca" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; text-decoration: none;">Explore <strong>1,019 TB</strong> of data through interactive portal →</a></p>
 
-Datasets, and associated analysis tools and demos, will progressively be added to the tables below. Data are hosted on the <a href="https://doi.ccs.ornl.gov/" target="_blank">Constellation repository</a> and may be downloaded to a local computer using <a href="https://www.globus.org/" target="_blank">Globus</a> or the provided <a href="https://strata-turbulence.ca/" target="_blank">interactive dashboard</a> (under continued development). If you are interesting in exploring datasets not currently archived on Constellation, please contact the group. 
+Available datasets are summarized in the tables below. Data are hosted on the <a href="https://doi.ccs.ornl.gov/" target="_blank">Constellation repository</a> and may be browsed and downloaded to a local computer through an <a href="https://strata-turbulence.ca/" target="_blank">interactive dashboard</a>, or directly via <a href="https://www.globus.org/" target="_blank">Globus</a>. <br> 
+
+If you are interesting in exploring datasets not currently archived on Constellation, please contact the group. 
 
 General details about the simulations are provided within the collapsible headings below.
 
@@ -335,8 +337,6 @@ DNS runs may be broadly categorized as follows, with further details and downloa
   - Fixed $Fr=2\pi U/\left(NL\right)=4$, $Re=UL/\nu=3200$
 </div>
 
-      <p><a href="/web/portfolio/taylorgreen/" style="color: #007acc; font-weight: bold;">Video, further details →</a></p>
-
     </div>
     
     <div style="flex: 1;">
@@ -349,7 +349,7 @@ DNS runs may be broadly categorized as follows, with further details and downloa
 
   <div markdown="1">
 
-  
+  <p><a href="https://strata-turbulence.ca/TG" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer and download portal →</a></p>
 
   | Name, dataset link, parameter file | $Pr$   |   Number of snapshots in time  |  Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) | Total dataset size
   | --------           | ------ | ------|        |

@@ -112,16 +112,12 @@ author_profile: false
   .demo-fullscreen a:hover { text-decoration: underline; }
 </style>
 
-<div class="demo-prereq">
-   To access data on Constellation, a free <a href="https://www.globus.org/" target="_blank">Globus account</a> is required. You can sign up with an existing Google or institutional account.
-</div>
 
+## 1. Interactive viewer and download portal
 
-## 1. Interactive viewer and download portal for sheared, stratified turbulence
+Explore <strong>1,019 TB</strong> of archived data through our interactive portal.
 
-Explore fifteen datasets of stratified turbulence forced by vertical shear, as further detailed at <a href="https://doi.ccs.ornl.gov/dataset/d6fa913a-184d-5aef-a81a-b7cfc47f5112" target="_blank" style="color: #007acc; font-weight: bold;">doi.org/10.13139/OLCF/3409014</a>
-
-<p><a href="https://strata-turbulence.ca/shear/" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer and download portal →</a></p>
+<p><a href="https://strata-turbulence.ca" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer and download portal →</a></p>
 
 
 ## 2. (Google Colab) Download and interactively visualize a snapshot in time
