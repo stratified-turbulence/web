@@ -70,7 +70,7 @@ author_profile: false
 
 # Datasets
 
-<p><a href="https://strata-turbulence.ca" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; text-decoration: none;">Explore <strong>1,019 TB</strong> of data through interactive portal →</a></p>
+<p><a href="https://strata-turbulence.ca" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; text-decoration: none;">Explore <strong>1,093 TB</strong> of data through interactive portal →</a></p>
 
 Available datasets are summarized in the tables below. Data are hosted on the <a href="https://doi.ccs.ornl.gov/" target="_blank">Constellation repository</a> and may be browsed and downloaded to a local computer through an <a href="https://strata-turbulence.ca/" target="_blank">interactive dashboard</a>, or directly via <a href="https://www.globus.org/" target="_blank">Globus</a>. <br> 
 

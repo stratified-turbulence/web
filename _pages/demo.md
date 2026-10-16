@@ -115,7 +115,7 @@ author_profile: false
 
 ## 1. Interactive viewer and download portal
 
-Explore <strong>1,019 TB</strong> of archived data through our interactive portal.
+Explore <strong>1,093 TB</strong> of archived data through our interactive portal.
 
 <p><a href="https://strata-turbulence.ca" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer and download portal →</a></p>
 

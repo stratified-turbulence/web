@@ -151,7 +151,7 @@ hidden: true
      <p style="color: #999; font-style: italic; font-size: 0.85rem;">
       Questions may be directed to <a href="https://www.yorku.ca/professor/couchman/" target="_blank">Miles Couchman</a> or <a href="https://www.umass.edu/engineering/about/directory/stephen-de-bruyn-kops" target="_blank">Steve de Bruyn Kops</a>
      </p>
-     <a href="{{ site.baseurl }}/Datasets/" class="hero-stat">Explore <strong>1,019 TB</strong> of available data →</a>
+     <a href="{{ site.baseurl }}/Datasets/" class="hero-stat">Explore <strong>1,093 TB</strong> of available data →</a>
   </div>
   <div class="hero-video-wrap">
     <video autoplay muted loop playsinline poster="{{ site.baseurl }}/images/startVis_poster.jpg">
