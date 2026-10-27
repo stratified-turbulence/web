@@ -300,9 +300,12 @@ DNS runs may be broadly categorized as follows, with further details and downloa
 
 
 
-  <p><a href="https://strata-turbulence.ca/shear/" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer and download portal →</a></p>
+  <p><a href="https://strata-turbulence.ca/shear/" target="_blank" style="display: inline-block; margin-right: 1em; padding: 0.4em 0.8em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer/download portal →</a>
 
-  <p><a href="https://doi.ccs.ornl.gov/dataset/d6fa913a-184d-5aef-a81a-b7cfc47f5112" target="_blank" style="color: #007acc; font-weight: bold;">doi.org/10.13139/OLCF/3409014 →</a></p>
+  <a href="https://essopenarchive.org/doi/full/10.22541/essoar.15011147/v1" target="_blank" style="display: inline-block; margin-right: 1em; padding: 0.4em 0.8em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Preprint →</a>
+
+  <a href="https://doi.ccs.ornl.gov/dataset/d6fa913a-184d-5aef-a81a-b7cfc47f5112" target="_blank" style="display: inline-block; padding: 0.4em 0.8em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Dataset →</a></p>
+
 
   | Name | $Pr$ |  $Gn$ | Grid points $(N_x, N_y, N_z)$ | Field size (per variable, snapshot) |
   | --------           | ------ | ------|        |
@@ -349,7 +352,7 @@ DNS runs may be broadly categorized as follows, with further details and downloa
 
   <div markdown="1">
 
-  <p><a href="https://strata-turbulence.ca/TG" target="_blank" style="display: inline-block; padding: 0.75em 1.25em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer and download portal →</a></p>
+  <p><a href="https://strata-turbulence.ca/TG" target="_blank" style="display: inline-block; padding: 0.4em 0.8em; border: 2px solid #007acc; border-radius: 8px; background: #eaf5fc; color: #007acc; font-weight: bold; text-decoration: none;">Interactive viewer/download portal →</a></p>
 
   | Name, dataset link, parameter file | $Pr$   |   Number of snapshots in time  |  Grid points $(N_x=N_y, N_z)$ | Field size (per variable, snapshot) | Total dataset size
   | --------           | ------ | ------|        |
