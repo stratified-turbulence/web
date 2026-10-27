@@ -241,7 +241,7 @@ author_profile: false
         card.style.display = match ? 'flex' : 'none';
       });
 
-      // Hide section titles when no cards in that section are visible
+      /* Hide section titles when no cards in that section are visible */
       sections.forEach(section => {
         const visible = [...section.querySelectorAll('.pub-card')]
           .some(c => c.style.display !== 'none');
