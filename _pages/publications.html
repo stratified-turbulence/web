@@ -249,4 +249,12 @@ author_profile: false
       });
     });
   });
+
+  /* Pre-select a filter from the URL, e.g. /Publications/?dataset=Taylor-green */
+  const initial = new URLSearchParams(window.location.search).get('dataset');
+  if (initial) {
+    const match = [...filterBtns]
+      .find(b => b.dataset.filter.toLowerCase() === initial.toLowerCase());
+    if (match) match.click();
+  }
 </script>
