@@ -224,7 +224,7 @@ This work is collaborative across multiple international research groups, includ
 
 * University of Massachusetts Amherst (US): [Steve de Bruyn Kops](https://www.umass.edu/engineering/about/directory/stephen-de-bruyn-kops){:target="_blank"}
 * Duke University (US): [Andrew Bragg](https://cee.duke.edu/people/andrew-bragg/){:target="_blank"}
-* Oak Ridge National Laboratory (US): [Murali Gopalakrishnan Meena](https://www.ornl.gov/staff-profile/murali-gopalakrishnan-meena){:target="_blank"}, [Wes Brewer](https://www.ornl.gov/staff-profile/wesley-h-brewer){:target="_blank"}, [Aditya Kashi](https://www.ornl.gov/staff-profile/aditya-kashi){:target="_blank"}, [Isaac Lyngass](https://www.ornl.gov/staff-profile/isaac-r-lyngaas){:target="_blank"}, [Pei Zhang](https://www.ornl.gov/staff-profile/pei-zhang){:target="_blank"}
+* Oak Ridge National Laboratory (US): [Murali Gopalakrishnan Meena](https://www.ornl.gov/staff-profile/murali-gopalakrishnan-meena){:target="_blank"}, [Wes Brewer](https://www.ornl.gov/staff/wes-h-brewer/){:target="_blank"}, [Aditya Kashi](https://www.ornl.gov/staff-profile/aditya-kashi){:target="_blank"}, [Isaac Lyngass](https://www.ornl.gov/staff-profile/isaac-r-lyngaas){:target="_blank"}, [Pei Zhang](https://www.ornl.gov/staff-profile/pei-zhang){:target="_blank"}
 * Imperial College London (UK): [Adrien Lefauve](https://www.alefauve.com/){:target="_blank"}
 * York University (Canada): [Miles Couchman](https://www.yorku.ca/professor/couchman/){:target="_blank"}
 
